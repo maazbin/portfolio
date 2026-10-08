@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Maaz Bin Mustaqeem — systems around the model</title>
-  <meta name="description" content="Maaz Bin Mustaqeem designs production systems where the model can reason and cannot be the last word. Karachi. Co-founder of Jambits. Xyova, Mishkat VLE, Cerebra, and the audit after the demo.">
+  <title>Maaz Bin Mustaqeem — AI systems engineer</title>
+  <meta name="description" content="Maaz Bin Mustaqeem builds production AI systems that work after the demo. Multi-agent pipelines, context architecture, evaluation, and the full backend stack. Karachi. Co-founder of Jambits.">
   <meta name="author" content="Maaz Bin Mustaqeem">
   <meta name="theme-color" content="#f4f0e6">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <meta property="og:title" content="Maaz Bin Mustaqeem — systems around the model">
-  <meta property="og:description" content="The model reasons. A separate check audits. A person sets the standard.">
+  <meta property="og:title" content="Maaz Bin Mustaqeem — AI systems engineer">
+  <meta property="og:description" content="The model reasons. A separate layer audits. A person sets the standard.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="images/maaz-hero.jpg">
+  <meta property="og:url" content="https://maazbin.github.io/portfolio/">
+  <meta property="og:image" content="https://maazbin.github.io/portfolio/images/maaz-hero.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -21,29 +22,33 @@
   <div class="rail" aria-hidden="true"></div>
   <div class="dot" aria-hidden="true"></div>
   <a class="skip" href="#work">Skip to work</a>
+
   <header class="nav">
     <a class="brand" href="#top">Maaz Bin Mustaqeem</a>
     <nav class="nav-links" aria-label="Page">
       <a href="#work">Work</a>
-
       <a href="#decisions">Decisions</a>
-      <a href="#practice">Practice</a>
+      <a href="#stack">Stack</a>
+      <a href="#practice">How I work</a>
       <a href="#writing">Writing</a>
       <a class="nav-cta" href="#contact">Write</a>
     </nav>
   </header>
 
   <main id="top">
+
+    <!-- ── HERO ── -->
     <section class="hero" aria-label="Introduction">
+      <canvas class="field" aria-hidden="true"></canvas>
       <div class="hero-frame">
         <div class="hero-copy">
-          <p class="kicker">Karachi · agentic AI engineer</p>
+          <p class="kicker">Karachi · AI systems engineer</p>
           <h1>Maaz Bin<br>Mustaqeem<em>.</em></h1>
-          <p class="lede">I design the system around the model. It is allowed to <span class="swap" aria-hidden="true">reason.</span><span class="sr">reason.</span> It is not allowed to be the last word.</p>
-          <p class="hero-aside">Agents, context, memory, evaluation, and the guardrail after the demo. A separate layer audits. A person sets the standard.</p>
+          <p class="lede">I build the system around the model — not just the integration. The part that <span class="swap" aria-hidden="true">holds.</span><span class="sr">holds.</span></p>
+          <p class="hero-aside">Multi-agent pipelines, context architecture, evaluation frameworks, and the full production backend. Four years shipping. Three public products. Zero demos left running as products.</p>
           <div class="hero-actions">
-            <a class="btn" href="#contact">Write</a>
-            <a class="btn ghost" href="#work">Selected work</a>
+            <a class="btn" href="#contact">Write to me</a>
+            <a class="btn ghost" href="#work">See the work</a>
           </div>
           <ul class="hero-points">
             <li><span>Studio</span><a href="https://jambits.io">Co-founder, Jambits</a></li>
@@ -64,24 +69,15 @@
       </div>
     </section>
 
-    <div class="hang" aria-hidden="true">
-      <div class="hang-wire"></div>
-      <span class="tag-hang" style="--at: 7%; --len: 34px"><i></i><b>Reason</b></span>
-      <span class="tag-hang" style="--at: 20%; --len: 62px"><i></i><b>Xyova</b></span>
-      <span class="tag-hang" style="--at: 34%; --len: 28px"><i></i><b>Audit</b></span>
-      <span class="tag-hang" style="--at: 48%; --len: 54px"><i></i><b>Cerebra</b></span>
-      <span class="tag-hang" style="--at: 63%; --len: 40px"><i></i><b>Mishkat VLE</b></span>
-      <span class="tag-hang" style="--at: 78%; --len: 70px"><i></i><b>Jambits</b></span>
-      <span class="tag-hang" style="--at: 91%; --len: 36px"><i></i><b>Cite</b></span>
-    </div>
-
+    <!-- ── TICKER ── -->
     <div class="ticker" aria-hidden="true">
       <div class="ticker-track">
-        <span>Xyova</span><span>Mishkat VLE</span><span>Cerebra</span><span>PlaceBoard</span><span>Transcribe Studio</span><span>Multi-agent systems</span><span>LangGraph</span><span>RAG</span><span>MCP</span><span>FastAPI</span><span>PostgreSQL</span><span>AWS Bedrock</span><span>Redis</span><span>LiveKit</span><span>Terraform</span>
-        <span>Xyova</span><span>Mishkat VLE</span><span>Cerebra</span><span>PlaceBoard</span><span>Transcribe Studio</span><span>Multi-agent systems</span><span>LangGraph</span><span>RAG</span><span>MCP</span><span>FastAPI</span><span>PostgreSQL</span><span>AWS Bedrock</span><span>Redis</span><span>LiveKit</span><span>Terraform</span>
+        <span>Xyova</span><span>Mishkat VLE</span><span>Cerebra</span><span>PlaceBoard</span><span>Transcribe Studio</span><span>LangGraph</span><span>FastAPI</span><span>PostgreSQL</span><span>AWS</span><span>LiveKit</span><span>Terraform</span><span>RAG</span><span>MCP</span><span>Redis</span><span>Celery</span>
+        <span>Xyova</span><span>Mishkat VLE</span><span>Cerebra</span><span>PlaceBoard</span><span>Transcribe Studio</span><span>LangGraph</span><span>FastAPI</span><span>PostgreSQL</span><span>AWS</span><span>LiveKit</span><span>Terraform</span><span>RAG</span><span>MCP</span><span>Redis</span><span>Celery</span>
       </div>
     </div>
 
+    <!-- ── SELECTED WORK ── -->
     <section id="work">
       <div class="wrap">
         <div class="section-head">
@@ -89,80 +85,81 @@
           <span class="index">01 — 07</span>
         </div>
         <div class="work-layout">
-        <div class="work">
-          <a class="piece" href="https://app.xyova.com/" data-plate="xyova" data-num="01" data-name="Xyova">
-            <span class="num">01</span>
-            <div>
-              <h3>Xyova</h3>
-              <p>A recorded lesson goes in. A score a school can defend comes out. Every finding is quoted and timestamped. A statistical audit — weighted rubric, spread, a z-score against that teacher’s own history, variant confidence, Cronbach’s alpha — can force a person to look before the score is filed. The model does not touch the math. English, Urdu, and Arabic.</p>
-            </div>
-            <span class="go" aria-hidden="true">app.xyova.com</span>
-          </a>
-          <a class="piece" href="https://mishkatvle.com/" data-plate="vle" data-num="02" data-name="Mishkat VLE">
-            <span class="num">02</span>
-            <div>
-              <h3>Mishkat VLE</h3>
-              <p>A multi-tenant classroom. Live class, attendance, and a gradebook, with portals for the school group, the teacher, the student, and the parent. The public site also offers an AI tutor. I own tenancy, auth, and the live-class path. The API decides who joins. Self-hosted LiveKit carries the video.</p>
-            </div>
-            <span class="go" aria-hidden="true">mishkatvle.com</span>
-          </a>
-          <a class="piece" href="https://jambits.io/cerebra" data-plate="cerebra" data-num="03" data-name="Cerebra">
-            <span class="num">03</span>
-            <div>
-              <h3>Cerebra</h3>
-              <p>I led the architecture. One project holds the PDFs, calls, images, and notes of a matter. An answer keeps the source passage attached. Ambiguous sections are flagged for a person instead of smoothed over.</p>
-            </div>
-            <span class="go" aria-hidden="true">jambits.io/cerebra</span>
-          </a>
-          <a class="piece" href="https://jambits.io" data-plate="placeboard" data-num="04" data-name="PlaceBoard">
-            <span class="num">04</span>
-            <div>
-              <h3>PlaceBoard</h3>
-              <p>The studio’s second live product. A job brief becomes a structured role. CVs are parsed and scored. The pipeline runs from sourced to hired, with outreach along the way.</p>
-            </div>
-            <span class="go" aria-hidden="true">jambits.io</span>
-          </a>
-          <a class="piece" href="https://github.com/Mishkat-Quantum-Labs/transcribe-studio" data-plate="transcribe" data-num="05" data-name="Transcribe Studio">
-            <span class="num">05</span>
-            <div>
-              <h3>Transcribe Studio</h3>
-              <p>Open source, on PyPI as transcribe-studio. It scores a transcript with word error rate and semantic word error rate, because fluent text can still be wrong. A companion downloader pulls ClassBank classroom audio for that benchmark.</p>
-            </div>
-            <span class="go" aria-hidden="true">GitHub</span>
-          </a>
-          <a class="piece" href="https://github.com/maazbin/devcontract" data-plate="devcontract" data-num="06" data-name="devcontract">
-            <span class="num">06</span>
-            <div>
-              <h3>devcontract</h3>
-              <p>The contract my coding agents work inside. Evidence-backed workflows over MCP, for Grok, Claude Code, Codex, and Kiro. Agents implement. They do not own the architecture.</p>
-            </div>
-            <span class="go" aria-hidden="true">GitHub</span>
-          </a>
-          <a class="piece" href="https://github.com/maazbin/farzana" data-plate="farzana" data-num="07" data-name="Farzana">
-            <span class="num">07</span>
-            <div>
-              <h3>Farzana</h3>
-              <p>A memory aide on Telegram. Markdown files are the source of truth. The model is a window. It cannot send mail, book a calendar, browse, or open a shell. Those tools were never built. The refusal is the design.</p>
-            </div>
-            <span class="go" aria-hidden="true">GitHub</span>
-          </a>
-        </div>
-        <aside class="stage" aria-hidden="true">
-          <div class="stage-frame">
-            <div class="plate on" data-plate="xyova"><svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="520" fill="#fffdf8"/><circle cx="200" cy="230" r="120" fill="none" stroke="#c4341d" stroke-width="1.2"/><circle cx="200" cy="230" r="78" fill="none" stroke="#1c1916" stroke-width="0.8" opacity="0.7"/><path d="M70 250 H330" stroke="#2f4f42" stroke-width="2"/><path d="M110 210 H250" stroke="#c4341d" stroke-width="6"/><path d="M150 290 H290" stroke="#1c1916" stroke-width="2" opacity="0.5"/></svg></div>
-            <div class="plate" data-plate="vle"><svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="520" fill="#fffdf8"/><rect x="78" y="128" width="244" height="150" rx="8" fill="none" stroke="#c4341d" stroke-width="1.6"/><circle cx="200" cy="196" r="26" fill="none" stroke="#1c1916" stroke-width="1.4"/><circle cx="200" cy="196" r="7" fill="#c4341d"/><rect x="78" y="312" width="52" height="52" rx="4" fill="none" stroke="#2f4f42" stroke-width="1.4"/><rect x="142" y="312" width="52" height="52" rx="4" fill="none" stroke="#1c1916" stroke-width="1.2"/><rect x="206" y="312" width="52" height="52" rx="4" fill="none" stroke="#c4341d" stroke-width="1.2"/><rect x="270" y="312" width="52" height="52" rx="4" fill="none" stroke="#6b645a" stroke-width="1.2"/></svg></div>
-            <div class="plate" data-plate="cerebra"><svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="520" fill="#fffdf8"/><rect x="90" y="120" width="180" height="230" rx="8" fill="none" stroke="#1c1916" stroke-width="1.2"/><rect x="120" y="150" width="180" height="230" rx="8" fill="#f3efe6" stroke="#c4341d" stroke-width="1.4"/><path d="M150 210 H270 M150 240 H250 M150 270 H260" stroke="#6b645a" stroke-width="2"/><circle cx="250" cy="330" r="16" fill="none" stroke="#2f4f42" stroke-width="2"/><path d="M243 330 l5 5 10-12" fill="none" stroke="#2f4f42" stroke-width="2"/></svg></div>
-            <div class="plate" data-plate="placeboard"><svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="520" fill="#fffdf8"/><circle cx="90" cy="180" r="18" fill="#c4341d"/><circle cx="200" cy="260" r="18" fill="none" stroke="#1c1916" stroke-width="2"/><circle cx="310" cy="340" r="18" fill="none" stroke="#2f4f42" stroke-width="2"/><path d="M108 188 C150 210 160 230 182 250 M218 270 C250 300 270 310 292 328" fill="none" stroke="#c4341d" stroke-width="1.4"/></svg></div>
-            <div class="plate" data-plate="transcribe"><svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="520" fill="#fffdf8"/><path d="M60 180 H340" stroke="#1c1916" stroke-width="1" opacity="0.4"/><path d="M60 200 C120 160 160 240 220 190 C280 140 320 220 360 180" fill="none" stroke="#c4341d" stroke-width="2"/><path d="M60 300 C130 340 170 250 230 310 C290 370 320 280 360 320" fill="none" stroke="#2f4f42" stroke-width="2"/><text x="64" y="420" fill="#6b645a" font-family="Georgia, serif" font-size="22">WER</text></svg></div>
-            <div class="plate" data-plate="devcontract"><svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="520" fill="#fffdf8"/><path d="M110 120 V400 M110 120 H190" fill="none" stroke="#c4341d" stroke-width="3"/><path d="M290 120 V400 M290 400 H210" fill="none" stroke="#1c1916" stroke-width="3"/><path d="M150 220 H250 M150 260 H230 M150 300 H250" stroke="#2f4f42" stroke-width="2"/></svg></div>
-            <div class="plate" data-plate="farzana"><svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="520" fill="#fffdf8"/><rect x="100" y="130" width="200" height="240" rx="6" fill="none" stroke="#1c1916" stroke-width="1.4"/><path d="M130 190 H270 M130 230 H240 M130 270 H260" stroke="#6b645a" stroke-width="2"/><path d="M150 340 L250 160" stroke="#c4341d" stroke-width="2"/></svg></div>
+          <div class="work">
+            <a class="piece" href="https://app.xyova.com/" data-plate="xyova" data-num="01" data-name="Xyova">
+              <span class="num">01</span>
+              <div>
+                <h3>Xyova</h3>
+                <p>A recorded lesson goes in. A score a school can defend comes out. Every finding is quoted and timestamped. A statistical audit — weighted rubric, standard deviation, z-score against that teacher's own history, Cronbach's alpha — gates the report before it reaches anyone's file. The model does not touch the math. English, Urdu, and Arabic.</p>
+              </div>
+              <span class="go" aria-hidden="true">app.xyova.com</span>
+            </a>
+            <a class="piece" href="https://mishkatvle.com/" data-plate="vle" data-num="02" data-name="Mishkat VLE">
+              <span class="num">02</span>
+              <div>
+                <h3>Mishkat VLE</h3>
+                <p>Multi-tenant classroom platform — live class, attendance, gradebook, and parent portal. I own tenancy, auth, and the live-class path. The API decides who joins and issues the token. Self-hosted LiveKit carries the media. Scale does not become a per-minute managed-video bill.</p>
+              </div>
+              <span class="go" aria-hidden="true">mishkatvle.com</span>
+            </a>
+            <a class="piece" href="https://jambits.io/cerebra" data-plate="cerebra" data-num="03" data-name="Cerebra">
+              <span class="num">03</span>
+              <div>
+                <h3>Cerebra</h3>
+                <p>I led the architecture. One project holds the PDFs, call recordings, images, and handwritten notes of a matter. Every answer keeps the source passage attached. Ambiguous sections are flagged for a person to resolve — not smoothed over by the model.</p>
+              </div>
+              <span class="go" aria-hidden="true">jambits.io/cerebra</span>
+            </a>
+            <a class="piece" href="https://jambits.io" data-plate="placeboard" data-num="04" data-name="PlaceBoard">
+              <span class="num">04</span>
+              <div>
+                <h3>PlaceBoard</h3>
+                <p>AI recruitment. A job brief becomes a structured role. CVs are parsed and scored. The pipeline moves from sourced to hired, with structured outreach built in.</p>
+              </div>
+              <span class="go" aria-hidden="true">jambits.io</span>
+            </a>
+            <a class="piece" href="https://github.com/Mishkat-Quantum-Labs/transcribe-studio" data-plate="transcribe" data-num="05" data-name="Transcribe Studio">
+              <span class="num">05</span>
+              <div>
+                <h3>Transcribe Studio</h3>
+                <p>Open source, on PyPI. A local evaluation harness for speech-to-text — WER and semantic WER, because fluent text can still be factually wrong. Used as the accuracy gate for Xyova. A companion downloader pulls real classroom audio from TalkBank ClassBank for benchmarking.</p>
+              </div>
+              <span class="go" aria-hidden="true">GitHub</span>
+            </a>
+            <a class="piece" href="https://github.com/maazbin/devcontract" data-plate="devcontract" data-num="06" data-name="devcontract">
+              <span class="num">06</span>
+              <div>
+                <h3>devcontract</h3>
+                <p>The engineering contract my coding agents work inside. Evidence-backed workflows over MCP — for Claude Code, Codex, Grok, and Kiro. Agents implement. I own the architecture and the review. The contract is the guardrail.</p>
+              </div>
+              <span class="go" aria-hidden="true">GitHub</span>
+            </a>
+            <a class="piece" href="https://github.com/maazbin/farzana" data-plate="farzana" data-num="07" data-name="Farzana">
+              <span class="num">07</span>
+              <div>
+                <h3>Farzana</h3>
+                <p>A memory aide on Telegram. Markdown files are the source of truth. The model is a window into them. It cannot send mail, book a calendar, browse, or open a shell — those tools were never built. The refusal is the architecture.</p>
+              </div>
+              <span class="go" aria-hidden="true">GitHub</span>
+            </a>
           </div>
-          <p class="stage-label"><span class="stage-num">01</span> <span class="stage-name">Xyova</span></p>
-        </aside>
+          <aside class="stage" aria-hidden="true">
+            <div class="stage-frame">
+              <div class="plate on" data-plate="xyova"><svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="520" fill="#fffdf8"/><circle cx="200" cy="230" r="120" fill="none" stroke="#c4341d" stroke-width="1.2"/><circle cx="200" cy="230" r="78" fill="none" stroke="#1c1916" stroke-width="0.8" opacity="0.7"/><path d="M70 250 H330" stroke="#2f4f42" stroke-width="2"/><path d="M110 210 H250" stroke="#c4341d" stroke-width="6"/><path d="M150 290 H290" stroke="#1c1916" stroke-width="2" opacity="0.5"/></svg></div>
+              <div class="plate" data-plate="vle"><svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="520" fill="#fffdf8"/><rect x="78" y="128" width="244" height="150" rx="8" fill="none" stroke="#c4341d" stroke-width="1.6"/><circle cx="200" cy="196" r="26" fill="none" stroke="#1c1916" stroke-width="1.4"/><circle cx="200" cy="196" r="7" fill="#c4341d"/><rect x="78" y="312" width="52" height="52" rx="4" fill="none" stroke="#2f4f42" stroke-width="1.4"/><rect x="142" y="312" width="52" height="52" rx="4" fill="none" stroke="#1c1916" stroke-width="1.2"/><rect x="206" y="312" width="52" height="52" rx="4" fill="none" stroke="#c4341d" stroke-width="1.2"/><rect x="270" y="312" width="52" height="52" rx="4" fill="none" stroke="#6b645a" stroke-width="1.2"/></svg></div>
+              <div class="plate" data-plate="cerebra"><svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="520" fill="#fffdf8"/><rect x="90" y="120" width="180" height="230" rx="8" fill="none" stroke="#1c1916" stroke-width="1.2"/><rect x="120" y="150" width="180" height="230" rx="8" fill="#f3efe6" stroke="#c4341d" stroke-width="1.4"/><path d="M150 210 H270 M150 240 H250 M150 270 H260" stroke="#6b645a" stroke-width="2"/><circle cx="250" cy="330" r="16" fill="none" stroke="#2f4f42" stroke-width="2"/><path d="M243 330 l5 5 10-12" fill="none" stroke="#2f4f42" stroke-width="2"/></svg></div>
+              <div class="plate" data-plate="placeboard"><svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="520" fill="#fffdf8"/><circle cx="90" cy="180" r="18" fill="#c4341d"/><circle cx="200" cy="260" r="18" fill="none" stroke="#1c1916" stroke-width="2"/><circle cx="310" cy="340" r="18" fill="none" stroke="#2f4f42" stroke-width="2"/><path d="M108 188 C150 210 160 230 182 250 M218 270 C250 300 270 310 292 328" fill="none" stroke="#c4341d" stroke-width="1.4"/></svg></div>
+              <div class="plate" data-plate="transcribe"><svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="520" fill="#fffdf8"/><path d="M60 180 H340" stroke="#1c1916" stroke-width="1" opacity="0.4"/><path d="M60 200 C120 160 160 240 220 190 C280 140 320 220 360 180" fill="none" stroke="#c4341d" stroke-width="2"/><path d="M60 300 C130 340 170 250 230 310 C290 370 320 280 360 320" fill="none" stroke="#2f4f42" stroke-width="2"/><text x="64" y="420" fill="#6b645a" font-family="Georgia, serif" font-size="22">WER</text></svg></div>
+              <div class="plate" data-plate="devcontract"><svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="520" fill="#fffdf8"/><path d="M110 120 V400 M110 120 H190" fill="none" stroke="#c4341d" stroke-width="3"/><path d="M290 120 V400 M290 400 H210" fill="none" stroke="#1c1916" stroke-width="3"/><path d="M150 220 H250 M150 260 H230 M150 300 H250" stroke="#2f4f42" stroke-width="2"/></svg></div>
+              <div class="plate" data-plate="farzana"><svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="520" fill="#fffdf8"/><rect x="100" y="130" width="200" height="240" rx="6" fill="none" stroke="#1c1916" stroke-width="1.4"/><path d="M130 190 H270 M130 230 H240 M130 270 H260" stroke="#6b645a" stroke-width="2"/><path d="M150 340 L250 160" stroke="#c4341d" stroke-width="2"/></svg></div>
+            </div>
+            <p class="stage-label"><span class="stage-num">01</span> <span class="stage-name">Xyova</span></p>
+          </aside>
         </div>
       </div>
     </section>
 
+    <!-- ── DECISIONS ── -->
     <section id="decisions">
       <div class="wrap">
         <div class="section-head">
@@ -173,75 +170,414 @@
           <article class="card">
             <div class="tag">Gate</div>
             <h3>The model is not the last word</h3>
-            <p>Three layers, and they do not do each other's job. The model reads and cites a quote and a time. A separate audit measures the score and can force review. A person sets the standard. I do not ship an agent that is allowed to lie, or to act unsupervised.</p>
+            <p>Three layers, and they do not do each other's job. The model reads and cites. A separate audit measures and can force human review. A person sets the standard. I do not ship a system where the output reaches anyone unsupervised.</p>
           </article>
           <article class="card">
             <div class="tag">Context</div>
             <h3>Each agent sees only what its job requires</h3>
-            <p>Context is not free. I scope what each agent can read: the right portion of the graph, the relevant history, nothing that adds tokens without adding signal. On Xyova, the evaluation agent never receives raw audio — only a structured transcript with timestamps. Retrieval layers filter and rank before the reasoning agent sees anything.</p>
+            <p>Context is not free. I scope what each agent can read — the right portion, the relevant history, nothing that adds tokens without adding signal. Retrieval layers filter and rank before the reasoning layer sees anything.</p>
           </article>
           <article class="card">
             <div class="tag">Eval</div>
             <h3>Fluent text can still be wrong</h3>
-            <p>Transcribe Studio — a public evaluation harness on PyPI — scores transcripts with word error rate and semantic WER. A fluent transcript that is factually wrong still fails. The same principle drives every agent eval: a pass is not a coherent sentence, it is a verifiable answer against a known ground truth.</p>
+            <p>Transcribe Studio scores transcripts with WER and semantic WER. A grammatically perfect output that contradicts the source still fails. I apply the same principle to every pipeline: the eval has to catch the failure mode that looks like success.</p>
           </article>
           <article class="card">
             <div class="tag">Agents</div>
             <h3>Constraints are architecture, not settings</h3>
-            <p>A LangGraph pipeline with checkpointed state handles intent, slots, grounded FAQ, and objection handling — then escalates to a human. A run can stop and resume. The escalation is a designed output, not a fallback. Tools the agent does not need are never built. The refusal is the design.</p>
+            <p>Checkpointed state means a pipeline can stop and resume. Human escalation is a designed output, not a fallback. Tools the agent does not need are never built. The refusal is the design, not an afterthought.</p>
           </article>
           <article class="card">
             <div class="tag">Upload</div>
             <h3>Crash-safe, not a streaming platform</h3>
-            <p>Recordings arrive over networks that drop. Multipart upload to object storage. Liveness is real data progress, not a heartbeat — a heartbeat cannot arrive during the outage. Recovery does not depend on the browser. A partial file is still processed. I wrote this up as the decision not to reach for Kinesis or WebSockets.</p>
+            <p>S3 multipart with chunk-level recovery. Liveness is real data progress — not a heartbeat, because a heartbeat cannot arrive during the outage you are recovering from. A partial file is still processed. I wrote this up publicly as the decision not to reach for Kinesis or WebSockets.</p>
           </article>
           <article class="card">
             <div class="tag">Media</div>
-            <h3>Live video without the meter</h3>
-            <p>Self-hosted LiveKit on <a href="https://mishkatvle.com/">Mishkat VLE</a>. The API decides who may join and issues the token. The media server only carries the video. Authorization never moves onto that box. Chosen so scale does not become a per-minute hosted bill.</p>
+            <h3>Live video without the per-minute bill</h3>
+            <p>Self-hosted LiveKit on Mishkat VLE. The API authorizes and issues tokens. The SFU carries the media. Authorization never moves onto the media server. Chosen because school-scale video should not be an open meter.</p>
           </article>
           <article class="card">
             <div class="tag">Access</div>
-            <h3>Tenancy is a query, not a button</h3>
-            <p>The people using the product and the people administering the platform do not share a login. Scope is applied where rows are read and written. A hidden button is not a control. Handlers stay thin. Services decide. Queries stay dumb and scoped.</p>
+            <h3>Tenancy is a query constraint, not a UI filter</h3>
+            <p>Scope is enforced where rows are read and written — not in a hidden button. A front-desk account must fail to write a lead-only discount when calling the API directly. Handlers stay thin. Services own decisions.</p>
           </article>
           <article class="card">
-            <div class="tag">Release</div>
-            <h3>Deploy like a product</h3>
-            <p>Pull requests run formatting, lint, and types. The pipeline uses short-lived credentials, not a long-lived cloud key. The box installs, starts, and hits a health check. A failed check rolls the release back.</p>
+            <div class="tag">Ship</div>
+            <h3>Deploy like a product, not like a laptop</h3>
+            <p>PRs run format, lint, and types. OIDC short-lived credentials, no long-lived cloud keys in the pipeline. The box installs, starts, and hits a health check. A failed check rolls the release back automatically.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="practice">
-      <div class="wrap split">
-        <img src="images/maaz-desk.jpg" alt="Maaz Bin Mustaqeem at a desk in a white shirt, laptop open, warm light and bookshelves behind him." width="1536" height="1024">
-        <div>
-          <p class="kicker">How the work moves</p>
-          <p class="pull">Spec first. Agents inside the contract. Tests. Then my review.</p>
-          <p class="note">Claude Code, Codex, and Kiro implement against a written contract. I keep the architecture, the review, and the decision to ship. On a concierge, intent and slots stay grounded in the FAQ, objections are handled, and a person takes the escalation. A run can stop and resume. A 48-hour proof of concept is what won a buyer.</p>
-          <div class="skills" aria-label="Tools">
-            <span>Python</span>
-            <span>FastAPI</span>
-            <span>LangGraph</span>
-            <span>Multi-agent systems</span>
-            <span>RAG</span>
-            <span>MCP</span>
-            <span>PostgreSQL</span>
-            <span>Redis</span>
-            <span>AWS Bedrock</span>
-            <span>AWS</span>
-            <span>Docker</span>
-            <span>Terraform</span>
-            <span>LiveKit</span>
-            <span>Celery</span>
+    <!-- ── TECH STACK ── -->
+    <section id="stack">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>The stack</h2>
+          <span class="index">Tools I ship with</span>
+        </div>
+        <p class="stack-intro">Four years across these tools in production. Click a category to see what I use in it.</p>
+        <div class="stack-tabs" role="tablist" aria-label="Stack categories">
+          <button class="stack-tab active" role="tab" aria-selected="true" data-tab="ai">AI &amp; Agents</button>
+          <button class="stack-tab" role="tab" aria-selected="false" data-tab="backend">Backend</button>
+          <button class="stack-tab" role="tab" aria-selected="false" data-tab="cloud">Cloud &amp; Infra</button>
+          <button class="stack-tab" role="tab" aria-selected="false" data-tab="data">Data &amp; Search</button>
+          <button class="stack-tab" role="tab" aria-selected="false" data-tab="realtime">Real-time</button>
+          <button class="stack-tab" role="tab" aria-selected="false" data-tab="dev">Dev tooling</button>
+        </div>
+
+        <div class="stack-panels">
+
+          <div class="stack-panel active" data-panel="ai" role="tabpanel">
+            <div class="tech-grid">
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- LangGraph / LangChain -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="20" stroke="#c4341d" stroke-width="1.5"/><circle cx="24" cy="14" r="4" fill="#c4341d"/><circle cx="14" cy="30" r="4" fill="#2f4f42"/><circle cx="34" cy="30" r="4" fill="#1c1916"/><path d="M24 18 L14 26 M24 18 L34 26" stroke="#c4341d" stroke-width="1.5"/><path d="M16 30 H32" stroke="#1c1916" stroke-width="1" stroke-dasharray="3 2"/></svg>
+                </div>
+                <span>LangGraph</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- Multi-agent -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="18" width="12" height="12" rx="2" stroke="#c4341d" stroke-width="1.5"/><rect x="18" y="6" width="12" height="12" rx="2" stroke="#1c1916" stroke-width="1.5"/><rect x="18" y="30" width="12" height="12" rx="2" stroke="#2f4f42" stroke-width="1.5"/><rect x="32" y="18" width="12" height="12" rx="2" stroke="#c4341d" stroke-width="1.5"/><path d="M16 24 H18 M30 12 L32 20 M30 36 L32 28" stroke="#6b645a" stroke-width="1.2"/></svg>
+                </div>
+                <span>Multi-agent systems</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- RAG -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="8" width="36" height="6" rx="1" stroke="#1c1916" stroke-width="1.5"/><rect x="6" y="18" width="28" height="6" rx="1" stroke="#1c1916" stroke-width="1.2" opacity="0.5"/><rect x="6" y="28" width="32" height="6" rx="1" stroke="#1c1916" stroke-width="1.2" opacity="0.5"/><circle cx="38" cy="38" r="6" stroke="#c4341d" stroke-width="1.5"/><path d="M35 38 H41 M38 35 V41" stroke="#c4341d" stroke-width="1.5"/></svg>
+                </div>
+                <span>RAG &amp; Retrieval</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- AWS Bedrock -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 6 L42 16 V32 L24 42 L6 32 V16 Z" stroke="#c4341d" stroke-width="1.5" fill="none"/><path d="M24 6 L24 42 M6 16 L42 16 M6 32 L42 32" stroke="#c4341d" stroke-width="0.8" opacity="0.4"/><circle cx="24" cy="24" r="5" fill="#c4341d" opacity="0.8"/></svg>
+                </div>
+                <span>AWS Bedrock</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- MCP -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="8" stroke="#2f4f42" stroke-width="1.5"/><path d="M24 8 V16 M24 32 V40 M8 24 H16 M32 24 H40" stroke="#2f4f42" stroke-width="1.5"/><circle cx="24" cy="8" r="2.5" fill="#c4341d"/><circle cx="24" cy="40" r="2.5" fill="#c4341d"/><circle cx="8" cy="24" r="2.5" fill="#c4341d"/><circle cx="40" cy="24" r="2.5" fill="#c4341d"/></svg>
+                </div>
+                <span>MCP</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- OpenAI / LLM -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 10 C31 10 37 16 37 24 C37 32 31 38 24 38 C17 38 11 32 11 24 C11 16 17 10 24 10Z" stroke="#1c1916" stroke-width="1.5"/><path d="M18 20 H30 M18 24 H26 M18 28 H28" stroke="#c4341d" stroke-width="1.8"/></svg>
+                </div>
+                <span>LLM orchestration</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- Vector DB / Embeddings -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="24" cy="14" rx="16" ry="6" stroke="#c4341d" stroke-width="1.5"/><path d="M8 14 V34 C8 37.3 15.2 40 24 40 C32.8 40 40 37.3 40 34 V14" stroke="#c4341d" stroke-width="1.5"/><path d="M8 24 C8 27.3 15.2 30 24 30 C32.8 30 40 27.3 40 24" stroke="#c4341d" stroke-width="1" opacity="0.5"/></svg>
+                </div>
+                <span>Vector databases</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- Eval frameworks -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="8" width="32" height="32" rx="2" stroke="#1c1916" stroke-width="1.5"/><path d="M14 24 L20 30 L34 18" stroke="#c4341d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <span>Eval frameworks</span>
+              </div>
+            </div>
           </div>
-          <p class="note">BS Computer Science, DHA Suffa University, Karachi. About four years designing and shipping production systems. I co-founded Jambits with Muhammad Huzaifa Ali and SM Bilal.</p>
+
+          <div class="stack-panel" data-panel="backend" role="tabpanel">
+            <div class="tech-grid">
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="8" width="32" height="32" rx="3" stroke="#c4341d" stroke-width="1.5"/><path d="M16 20 H32 M16 24 H28 M16 28 H30" stroke="#1c1916" stroke-width="1.5"/><circle cx="32" cy="20" r="3" fill="#c4341d"/></svg>
+                </div>
+                <span>FastAPI</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 8 L38 16 V32 L24 40 L10 32 V16 Z" stroke="#2f4f42" stroke-width="1.5"/><text x="17" y="27" fill="#2f4f42" font-family="monospace" font-size="9" font-weight="bold">Py</text></svg>
+                </div>
+                <span>Python</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="12" width="32" height="5" rx="1" stroke="#1c1916" stroke-width="1.5"/><path d="M10 17 V36 C10 37.1 10.9 38 12 38 H36 C37.1 38 38 37.1 38 36 V17" stroke="#1c1916" stroke-width="1.5"/><path d="M18 22 H30 M18 27 H26" stroke="#c4341d" stroke-width="1.2"/></svg>
+                </div>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="16" stroke="#c4341d" stroke-width="1.5"/><path d="M14 20 C14 20 16 24 24 24 C32 24 34 20 34 20" stroke="#c4341d" stroke-width="1.2"/><path d="M14 28 C14 28 16 32 24 32 C32 32 34 28 34 28" stroke="#c4341d" stroke-width="1.2"/><path d="M14 20 V28 M34 20 V28" stroke="#c4341d" stroke-width="1.2"/></svg>
+                </div>
+                <span>Redis</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="20" width="10" height="10" rx="2" stroke="#1c1916" stroke-width="1.5"/><rect x="19" y="20" width="10" height="10" rx="2" stroke="#1c1916" stroke-width="1.5"/><rect x="32" y="20" width="10" height="10" rx="2" stroke="#1c1916" stroke-width="1.5"/><rect x="19" y="8" width="10" height="8" rx="2" stroke="#c4341d" stroke-width="1.5"/><path d="M24 16 V20 M11 20 V17 L19 13 M37 20 V17 L29 13" stroke="#6b645a" stroke-width="1.2"/></svg>
+                </div>
+                <span>Celery</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="14" width="36" height="8" rx="2" stroke="#2f4f42" stroke-width="1.5"/><rect x="6" y="26" width="36" height="8" rx="2" stroke="#2f4f42" stroke-width="1.2" opacity="0.6"/><circle cx="38" cy="18" r="2" fill="#c4341d"/><circle cx="38" cy="30" r="2" fill="#c4341d" opacity="0.5"/></svg>
+                </div>
+                <span>REST APIs</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 24 C10 24 14 10 24 10 C34 10 38 24 38 24 C38 24 34 38 24 38 C14 38 10 24 10 24Z" stroke="#c4341d" stroke-width="1.5"/><circle cx="24" cy="24" r="6" stroke="#1c1916" stroke-width="1.5"/></svg>
+                </div>
+                <span>TypeScript</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="8" width="32" height="32" rx="3" fill="none" stroke="#1c1916" stroke-width="1.5"/><path d="M16 24 L22 18 L28 24 L34 18" stroke="#c4341d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 30 H32" stroke="#6b645a" stroke-width="1.2"/></svg>
+                </div>
+                <span>React / Next.js</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="stack-panel" data-panel="cloud" role="tabpanel">
+            <div class="tech-grid">
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- AWS -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 30 C8 30 6 27 6 24 C6 21 8 18.5 11 18.1 C11.6 14.6 14.6 12 18 12 C19.4 12 20.7 12.4 21.8 13.1 C23 10.7 25.5 9 28.5 9 C33.2 9 37 12.8 37 17.5 C37 17.8 37 18.1 36.9 18.4 C39.3 19.2 41 21.4 41 24 C41 27 38.8 29.5 36 30" stroke="#c4341d" stroke-width="1.5" fill="none"/><path d="M16 36 L20 32 M24 38 L24 32 M32 36 L28 32" stroke="#c4341d" stroke-width="1.5"/></svg>
+                </div>
+                <span>AWS</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- Lambda -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 38 L18 14 L24 28 M20 28 L30 14 L40 38" stroke="#c4341d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <span>Lambda</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- EC2 -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="10" y="10" width="28" height="28" rx="2" stroke="#1c1916" stroke-width="1.5"/><path d="M10 20 H38 M10 28 H38 M20 10 V38 M28 10 V38" stroke="#1c1916" stroke-width="0.8" opacity="0.4"/><rect x="16" y="16" width="8" height="8" rx="1" fill="#c4341d" opacity="0.7"/></svg>
+                </div>
+                <span>EC2</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- S3 -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 8 L40 16 L24 24 L8 16 Z" stroke="#2f4f42" stroke-width="1.5" fill="none"/><path d="M8 16 V32 L24 40 L40 32 V16" stroke="#2f4f42" stroke-width="1.5" fill="none"/><path d="M24 24 V40" stroke="#2f4f42" stroke-width="1.2"/></svg>
+                </div>
+                <span>S3</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- Terraform -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 14 L20 8 L20 22 L10 28 Z" fill="#c4341d" opacity="0.8"/><path d="M22 22 L32 16 L32 30 L22 36 Z" fill="#2f4f42" opacity="0.8"/><path d="M22 8 L32 2 L32 16 L22 22 Z" fill="#1c1916" opacity="0.6"/><path d="M10 28 L20 22 L20 36 L10 42 Z" fill="#c4341d" opacity="0.4"/></svg>
+                </div>
+                <span>Terraform</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- Docker -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="18" width="8" height="7" rx="1" stroke="#1c1916" stroke-width="1.4"/><rect x="16" y="18" width="8" height="7" rx="1" stroke="#1c1916" stroke-width="1.4"/><rect x="26" y="18" width="8" height="7" rx="1" stroke="#1c1916" stroke-width="1.4"/><rect x="16" y="9" width="8" height="7" rx="1" stroke="#c4341d" stroke-width="1.4"/><path d="M6 28 C6 34 10 36 16 36 H33 C38 36 42 32 42 27 C40 27 38 26 38 24 C36 25 34 25 34 25" stroke="#1c1916" stroke-width="1.4" fill="none"/></svg>
+                </div>
+                <span>Docker</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- Cognito / Auth -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="18" r="8" stroke="#c4341d" stroke-width="1.5"/><path d="M10 40 C10 32 16 28 24 28 C32 28 38 32 38 40" stroke="#c4341d" stroke-width="1.5"/><path d="M30 20 L34 24 L42 16" stroke="#2f4f42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <span>Cognito / Auth</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- GitHub Actions / CI -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="16" stroke="#1c1916" stroke-width="1.5"/><path d="M20 18 C20 18 16 20 16 24 C16 28 20 30 24 30 C28 30 32 28 32 24 C32 20 28 18 24 18" stroke="#1c1916" stroke-width="1.2"/><path d="M24 14 V18 M24 30 V34" stroke="#c4341d" stroke-width="1.5"/></svg>
+                </div>
+                <span>GitHub Actions / CI</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="stack-panel" data-panel="data" role="tabpanel">
+            <div class="tech-grid">
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- PostgreSQL full-text -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="24" cy="14" rx="14" ry="5" stroke="#2f4f42" stroke-width="1.5"/><path d="M10 14 V34 C10 36.8 16.3 39 24 39 C31.7 39 38 36.8 38 34 V14" stroke="#2f4f42" stroke-width="1.5"/><path d="M10 24 C10 26.8 16.3 29 24 29 C31.7 29 38 26.8 38 24" stroke="#2f4f42" stroke-width="1" opacity="0.5"/></svg>
+                </div>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- Pinecone / vector -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 8 L38 38 H10 Z" stroke="#c4341d" stroke-width="1.5" fill="none"/><circle cx="24" cy="28" r="5" fill="#c4341d" opacity="0.7"/></svg>
+                </div>
+                <span>Pinecone</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- SQS -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="14" width="36" height="10" rx="2" stroke="#c4341d" stroke-width="1.5"/><rect x="6" y="28" width="28" height="10" rx="2" stroke="#1c1916" stroke-width="1.2" opacity="0.5"/><path d="M34 28 L40 33 L34 38" stroke="#c4341d" stroke-width="1.5" fill="none"/></svg>
+                </div>
+                <span>SQS / queues</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- Embeddings -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4" fill="#c4341d"/><circle cx="36" cy="12" r="4" fill="#1c1916"/><circle cx="24" cy="36" r="4" fill="#2f4f42"/><path d="M16 12 H32 M14 16 L22 32 M34 16 L26 32" stroke="#6b645a" stroke-width="1.2"/></svg>
+                </div>
+                <span>Embeddings</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- S3 data lake -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="20" width="32" height="20" rx="2" stroke="#1c1916" stroke-width="1.5"/><path d="M8 28 H40 M8 36 H40 M18 20 V40 M28 20 V40" stroke="#1c1916" stroke-width="0.8" opacity="0.4"/><path d="M18 8 L24 14 L30 8" stroke="#c4341d" stroke-width="1.5"/><path d="M24 14 V20" stroke="#c4341d" stroke-width="1.5"/></svg>
+                </div>
+                <span>Data pipelines</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- WER / Eval -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 30 C12 20 16 36 20 26 C24 16 28 36 32 22 C36 10 40 28 42 24" stroke="#c4341d" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M8 38 H40" stroke="#1c1916" stroke-width="1" opacity="0.4"/></svg>
+                </div>
+                <span>WER / Semantic eval</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="stack-panel" data-panel="realtime" role="tabpanel">
+            <div class="tech-grid">
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- LiveKit -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="12" width="22" height="16" rx="2" stroke="#c4341d" stroke-width="1.5"/><path d="M30 18 L40 14 L40 30 L30 26 Z" stroke="#c4341d" stroke-width="1.5" fill="none"/><path d="M12 32 V38 M20 32 V36 M28 32 V40" stroke="#2f4f42" stroke-width="1.5"/></svg>
+                </div>
+                <span>LiveKit (self-hosted)</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- WebSocket -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 14 C12 14 6 20 6 24 C6 28 12 34 12 34" stroke="#1c1916" stroke-width="2" stroke-linecap="round"/><path d="M36 14 C36 14 42 20 42 24 C42 28 36 34 36 34" stroke="#1c1916" stroke-width="2" stroke-linecap="round"/><path d="M20 32 L28 16" stroke="#c4341d" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <span>WebSockets</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- S3 multipart -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 38 V16 M24 16 L16 24 M24 16 L32 24" stroke="#c4341d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="8" y="34" width="14" height="8" rx="1" stroke="#1c1916" stroke-width="1.4"/><rect x="26" y="34" width="14" height="8" rx="1" stroke="#1c1916" stroke-width="1.4" opacity="0.5"/><rect x="17" y="30" width="14" height="8" rx="1" stroke="#c4341d" stroke-width="1.4"/></svg>
+                </div>
+                <span>S3 multipart upload</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- SFU / Media -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="8" stroke="#2f4f42" stroke-width="1.5"/><circle cx="10" cy="12" r="4" stroke="#1c1916" stroke-width="1.2"/><circle cx="38" cy="12" r="4" stroke="#1c1916" stroke-width="1.2"/><circle cx="10" cy="36" r="4" stroke="#1c1916" stroke-width="1.2"/><circle cx="38" cy="36" r="4" stroke="#1c1916" stroke-width="1.2"/><path d="M14 14 L18 18 M34 14 L30 18 M14 34 L18 30 M34 34 L30 30" stroke="#c4341d" stroke-width="1.2"/></svg>
+                </div>
+                <span>SFU architecture</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- Celery async -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="24" r="6" stroke="#c4341d" stroke-width="1.5"/><circle cx="34" cy="24" r="6" stroke="#1c1916" stroke-width="1.5"/><path d="M20 22 H28 M20 26 H28" stroke="#6b645a" stroke-width="1.2"/><path d="M14 8 V18 M34 8 V18 M14 30 V40 M34 30 V40" stroke="#c4341d" stroke-width="1" opacity="0.5" stroke-dasharray="2 2"/></svg>
+                </div>
+                <span>Async task queues</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="stack-panel" data-panel="dev" role="tabpanel">
+            <div class="tech-grid">
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- Claude Code / AI harness -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#1c1916" stroke-width="1.5"/><path d="M14 20 L20 24 L14 28" stroke="#c4341d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 28 H34" stroke="#1c1916" stroke-width="1.8" stroke-linecap="round"/></svg>
+                </div>
+                <span>Claude Code / Codex</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- devcontract / MCP harness -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 12 V36 M10 12 H22" stroke="#c4341d" stroke-width="2.5" stroke-linecap="round"/><path d="M38 12 V36 M38 36 H26" stroke="#1c1916" stroke-width="2.5" stroke-linecap="round"/><path d="M16 22 H32 M16 28 H28 M16 34 H30" stroke="#2f4f42" stroke-width="1.5"/></svg>
+                </div>
+                <span>devcontract (MCP)</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- Git / GitHub -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="16" stroke="#1c1916" stroke-width="1.5"/><circle cx="24" cy="16" r="3" fill="#c4341d"/><circle cx="16" cy="30" r="3" fill="#1c1916"/><circle cx="32" cy="30" r="3" fill="#1c1916"/><path d="M24 19 V27 M21 30 H27" stroke="#6b645a" stroke-width="1.2"/></svg>
+                </div>
+                <span>Git / GitHub</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- OIDC / short-lived creds -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="14" y="22" width="20" height="18" rx="2" stroke="#1c1916" stroke-width="1.5"/><path d="M18 22 V16 C18 12.7 20.7 10 24 10 C27.3 10 30 12.7 30 16 V22" stroke="#1c1916" stroke-width="1.5"/><circle cx="24" cy="31" r="3" fill="#c4341d"/></svg>
+                </div>
+                <span>OIDC / secrets mgmt</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- Ruff / Black / mypy -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 14 H38 M10 22 H30 M10 30 H34 M10 38 H28" stroke="#2f4f42" stroke-width="2" stroke-linecap="round"/><circle cx="38" cy="30" r="5" stroke="#c4341d" stroke-width="1.5"/><path d="M35.5 30 H40.5 M38 27.5 V32.5" stroke="#c4341d" stroke-width="1.5"/></svg>
+                </div>
+                <span>Ruff / Black / mypy</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <!-- CodeDeploy / rollback -->
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="14" stroke="#2f4f42" stroke-width="1.5"/><path d="M24 14 V24 L30 30" stroke="#c4341d" stroke-width="2" stroke-linecap="round"/><path d="M10 14 C10 14 6 10 10 6" stroke="#1c1916" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </div>
+                <span>CI / CodeDeploy</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /stack-panels -->
+      </div>
+    </section>
+
+    <!-- ── HOW I WORK ── -->
+    <section id="practice">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>How I work</h2>
+          <span class="index">Method</span>
+        </div>
+        <div class="practice-grid">
+          <div class="practice-copy">
+            <p class="pull">Spec first. Agents implement. I own the architecture.</p>
+            <p class="note">The spec is written before the first line of code. Coding agents — Claude Code, Codex, Kiro — work inside a written contract that defines what they can touch and what they cannot. I review every change. I own the decisions that survive the demo.</p>
+            <p class="note" style="margin-top: 1rem;">On pipelines: context is scoped before the model sees it. Evaluation is built before the pipeline is trusted. Failure modes are designed for, not discovered after launch. A 48-hour proof of concept is what won a major client — because the architecture held under real conditions, not just demo conditions.</p>
+            <div class="practice-stats">
+              <div class="stat">
+                <span class="stat-num">4+</span>
+                <span class="stat-label">years in production</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">3</span>
+                <span class="stat-label">public AI products</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">2</span>
+                <span class="stat-label">production platforms</span>
+              </div>
+            </div>
+          </div>
+          <div class="practice-photo">
+            <img src="images/maaz-desk.jpg" alt="Maaz Bin Mustaqeem at a desk, laptop open." width="1536" height="1024">
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- ── WRITING ── -->
     <section id="writing">
       <div class="wrap">
         <div class="section-head">
@@ -253,7 +589,7 @@
             <span class="num">08</span>
             <div>
               <h3>Essays</h3>
-              <p>Crash-safe live upload without Kinesis or WebSockets. A public API on FastAPI and AWS. Session validation. The code that accompanies the posts is on GitHub.</p>
+              <p>Crash-safe live upload without Kinesis or WebSockets. A public API on FastAPI and AWS. Session validation. Thinking in public, with the code on GitHub.</p>
             </div>
             <span class="go" aria-hidden="true">Medium</span>
           </a>
@@ -261,7 +597,7 @@
             <span class="num">09</span>
             <div>
               <h3>FastAPI boilerplate</h3>
-              <p>The layout I reuse: router, service, crud, model. HTTP authenticates and translates. Business rules do not live in the handler.</p>
+              <p>The layout I reuse: router, service, crud, model. HTTP authenticates and translates. Business rules do not live in the handler. Scoped queries throughout.</p>
             </div>
             <span class="go" aria-hidden="true">GitHub</span>
           </a>
@@ -277,6 +613,7 @@
       </div>
     </section>
 
+    <!-- ── CONTACT ── -->
     <section id="contact">
       <div class="wrap contact">
         <div>
@@ -301,12 +638,14 @@
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="wrap">
     <span>Maaz Bin Mustaqeem · Karachi</span>
     <a href="https://jambits.io">jambits.io</a>
   </footer>
+
   <script src="motion.js" defer></script>
 </body>
 </html>
