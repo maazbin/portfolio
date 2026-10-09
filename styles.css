@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --bg: #f4f0e6;
   --bg-2: #fffdf8;
   --ink: #1c1916;
@@ -529,13 +529,35 @@ h2 {
   transform: translateY(-2px);
 }
 .tech-icon {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.tech-icon svg {
+.tech-icon img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
+  display: block;
+  /* tint all icons to page ink so they match the palette */
+  filter: brightness(0) saturate(100%);
+  transition: filter 0.2s ease;
+}
+/* accent-colored icons (passed as c4341d in the URL) stay reddish */
+.tech-item:hover .tech-icon img {
+  filter: brightness(0) saturate(100%) invert(22%) sepia(80%) saturate(800%) hue-rotate(340deg) brightness(90%);
+}
+/* text fallback icons (MCP, RAG, Eval, WER) */
+.tech-icon--text {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+  line-height: 1;
 }
 .tech-item span {
   font-size: 0.82rem;

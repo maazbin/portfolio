@@ -227,323 +227,226 @@
           <h2>The stack</h2>
           <span class="index">Tools I ship with</span>
         </div>
-        <p class="stack-intro">Four years across these tools in production. Click a category to see what I use in it.</p>
+        <p class="stack-intro">Four years across these tools in production. Click a category to see what I reach for.</p>
         <div class="stack-tabs" role="tablist" aria-label="Stack categories">
-          <button class="stack-tab active" role="tab" aria-selected="true" data-tab="ai">AI &amp; Agents</button>
-          <button class="stack-tab" role="tab" aria-selected="false" data-tab="backend">Backend</button>
-          <button class="stack-tab" role="tab" aria-selected="false" data-tab="cloud">Cloud &amp; Infra</button>
-          <button class="stack-tab" role="tab" aria-selected="false" data-tab="data">Data &amp; Search</button>
-          <button class="stack-tab" role="tab" aria-selected="false" data-tab="realtime">Real-time</button>
-          <button class="stack-tab" role="tab" aria-selected="false" data-tab="dev">Dev tooling</button>
+          <button class="stack-tab active" role="tab" aria-selected="true"  data-tab="ai">AI &amp; Agents</button>
+          <button class="stack-tab"        role="tab" aria-selected="false" data-tab="backend">Backend</button>
+          <button class="stack-tab"        role="tab" aria-selected="false" data-tab="cloud">Cloud &amp; Infra</button>
+          <button class="stack-tab"        role="tab" aria-selected="false" data-tab="data">Data &amp; Search</button>
+          <button class="stack-tab"        role="tab" aria-selected="false" data-tab="realtime">Real-time</button>
+          <button class="stack-tab"        role="tab" aria-selected="false" data-tab="dev">Dev tooling</button>
         </div>
 
         <div class="stack-panels">
 
+          <!-- AI & Agents -->
           <div class="stack-panel active" data-panel="ai" role="tabpanel">
             <div class="tech-grid">
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- LangGraph / LangChain -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="20" stroke="#c4341d" stroke-width="1.5"/><circle cx="24" cy="14" r="4" fill="#c4341d"/><circle cx="14" cy="30" r="4" fill="#2f4f42"/><circle cx="34" cy="30" r="4" fill="#1c1916"/><path d="M24 18 L14 26 M24 18 L34 26" stroke="#c4341d" stroke-width="1.5"/><path d="M16 30 H32" stroke="#1c1916" stroke-width="1" stroke-dasharray="3 2"/></svg>
-                </div>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/langchain/1c1916" alt="LangChain" loading="lazy"></div>
                 <span>LangGraph</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- Multi-agent -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="18" width="12" height="12" rx="2" stroke="#c4341d" stroke-width="1.5"/><rect x="18" y="6" width="12" height="12" rx="2" stroke="#1c1916" stroke-width="1.5"/><rect x="18" y="30" width="12" height="12" rx="2" stroke="#2f4f42" stroke-width="1.5"/><rect x="32" y="18" width="12" height="12" rx="2" stroke="#c4341d" stroke-width="1.5"/><path d="M16 24 H18 M30 12 L32 20 M30 36 L32 28" stroke="#6b645a" stroke-width="1.2"/></svg>
-                </div>
-                <span>Multi-agent systems</span>
-              </div>
-              <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- RAG -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="8" width="36" height="6" rx="1" stroke="#1c1916" stroke-width="1.5"/><rect x="6" y="18" width="28" height="6" rx="1" stroke="#1c1916" stroke-width="1.2" opacity="0.5"/><rect x="6" y="28" width="32" height="6" rx="1" stroke="#1c1916" stroke-width="1.2" opacity="0.5"/><circle cx="38" cy="38" r="6" stroke="#c4341d" stroke-width="1.5"/><path d="M35 38 H41 M38 35 V41" stroke="#c4341d" stroke-width="1.5"/></svg>
-                </div>
-                <span>RAG &amp; Retrieval</span>
-              </div>
-              <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- AWS Bedrock -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 6 L42 16 V32 L24 42 L6 32 V16 Z" stroke="#c4341d" stroke-width="1.5" fill="none"/><path d="M24 6 L24 42 M6 16 L42 16 M6 32 L42 32" stroke="#c4341d" stroke-width="0.8" opacity="0.4"/><circle cx="24" cy="24" r="5" fill="#c4341d" opacity="0.8"/></svg>
-                </div>
-                <span>AWS Bedrock</span>
-              </div>
-              <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- MCP -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="8" stroke="#2f4f42" stroke-width="1.5"/><path d="M24 8 V16 M24 32 V40 M8 24 H16 M32 24 H40" stroke="#2f4f42" stroke-width="1.5"/><circle cx="24" cy="8" r="2.5" fill="#c4341d"/><circle cx="24" cy="40" r="2.5" fill="#c4341d"/><circle cx="8" cy="24" r="2.5" fill="#c4341d"/><circle cx="40" cy="24" r="2.5" fill="#c4341d"/></svg>
-                </div>
-                <span>MCP</span>
-              </div>
-              <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- OpenAI / LLM -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 10 C31 10 37 16 37 24 C37 32 31 38 24 38 C17 38 11 32 11 24 C11 16 17 10 24 10Z" stroke="#1c1916" stroke-width="1.5"/><path d="M18 20 H30 M18 24 H26 M18 28 H28" stroke="#c4341d" stroke-width="1.8"/></svg>
-                </div>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/openai/1c1916" alt="OpenAI" loading="lazy"></div>
                 <span>LLM orchestration</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- Vector DB / Embeddings -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="24" cy="14" rx="16" ry="6" stroke="#c4341d" stroke-width="1.5"/><path d="M8 14 V34 C8 37.3 15.2 40 24 40 C32.8 40 40 37.3 40 34 V14" stroke="#c4341d" stroke-width="1.5"/><path d="M8 24 C8 27.3 15.2 30 24 30 C32.8 30 40 27.3 40 24" stroke="#c4341d" stroke-width="1" opacity="0.5"/></svg>
-                </div>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/amazonwebservices/c4341d" alt="AWS" loading="lazy"></div>
+                <span>AWS Bedrock</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon tech-icon--text">MCP</div>
+                <span>MCP</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon tech-icon--text">RAG</div>
+                <span>RAG &amp; Retrieval</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon tech-icon--text">Vec</div>
                 <span>Vector databases</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- Eval frameworks -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="8" width="32" height="32" rx="2" stroke="#1c1916" stroke-width="1.5"/><path d="M14 24 L20 30 L34 18" stroke="#c4341d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </div>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/huggingface/1c1916" alt="Hugging Face" loading="lazy"></div>
+                <span>Hugging Face</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon tech-icon--text">Eval</div>
                 <span>Eval frameworks</span>
               </div>
             </div>
           </div>
 
+          <!-- Backend -->
           <div class="stack-panel" data-panel="backend" role="tabpanel">
             <div class="tech-grid">
               <div class="tech-item">
-                <div class="tech-icon">
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="8" width="32" height="32" rx="3" stroke="#c4341d" stroke-width="1.5"/><path d="M16 20 H32 M16 24 H28 M16 28 H30" stroke="#1c1916" stroke-width="1.5"/><circle cx="32" cy="20" r="3" fill="#c4341d"/></svg>
-                </div>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/fastapi/1c1916" alt="FastAPI" loading="lazy"></div>
                 <span>FastAPI</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 8 L38 16 V32 L24 40 L10 32 V16 Z" stroke="#2f4f42" stroke-width="1.5"/><text x="17" y="27" fill="#2f4f42" font-family="monospace" font-size="9" font-weight="bold">Py</text></svg>
-                </div>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/python/1c1916" alt="Python" loading="lazy"></div>
                 <span>Python</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="12" width="32" height="5" rx="1" stroke="#1c1916" stroke-width="1.5"/><path d="M10 17 V36 C10 37.1 10.9 38 12 38 H36 C37.1 38 38 37.1 38 36 V17" stroke="#1c1916" stroke-width="1.5"/><path d="M18 22 H30 M18 27 H26" stroke="#c4341d" stroke-width="1.2"/></svg>
-                </div>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/postgresql/1c1916" alt="PostgreSQL" loading="lazy"></div>
                 <span>PostgreSQL</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="16" stroke="#c4341d" stroke-width="1.5"/><path d="M14 20 C14 20 16 24 24 24 C32 24 34 20 34 20" stroke="#c4341d" stroke-width="1.2"/><path d="M14 28 C14 28 16 32 24 32 C32 32 34 28 34 28" stroke="#c4341d" stroke-width="1.2"/><path d="M14 20 V28 M34 20 V28" stroke="#c4341d" stroke-width="1.2"/></svg>
-                </div>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/redis/c4341d" alt="Redis" loading="lazy"></div>
                 <span>Redis</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="20" width="10" height="10" rx="2" stroke="#1c1916" stroke-width="1.5"/><rect x="19" y="20" width="10" height="10" rx="2" stroke="#1c1916" stroke-width="1.5"/><rect x="32" y="20" width="10" height="10" rx="2" stroke="#1c1916" stroke-width="1.5"/><rect x="19" y="8" width="10" height="8" rx="2" stroke="#c4341d" stroke-width="1.5"/><path d="M24 16 V20 M11 20 V17 L19 13 M37 20 V17 L29 13" stroke="#6b645a" stroke-width="1.2"/></svg>
-                </div>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/celery/1c1916" alt="Celery" loading="lazy"></div>
                 <span>Celery</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="14" width="36" height="8" rx="2" stroke="#2f4f42" stroke-width="1.5"/><rect x="6" y="26" width="36" height="8" rx="2" stroke="#2f4f42" stroke-width="1.2" opacity="0.6"/><circle cx="38" cy="18" r="2" fill="#c4341d"/><circle cx="38" cy="30" r="2" fill="#c4341d" opacity="0.5"/></svg>
-                </div>
-                <span>REST APIs</span>
-              </div>
-              <div class="tech-item">
-                <div class="tech-icon">
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 24 C10 24 14 10 24 10 C34 10 38 24 38 24 C38 24 34 38 24 38 C14 38 10 24 10 24Z" stroke="#c4341d" stroke-width="1.5"/><circle cx="24" cy="24" r="6" stroke="#1c1916" stroke-width="1.5"/></svg>
-                </div>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/typescript/1c1916" alt="TypeScript" loading="lazy"></div>
                 <span>TypeScript</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="8" width="32" height="32" rx="3" fill="none" stroke="#1c1916" stroke-width="1.5"/><path d="M16 24 L22 18 L28 24 L34 18" stroke="#c4341d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 30 H32" stroke="#6b645a" stroke-width="1.2"/></svg>
-                </div>
-                <span>React / Next.js</span>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/react/1c1916" alt="React" loading="lazy"></div>
+                <span>React</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/nextdotjs/1c1916" alt="Next.js" loading="lazy"></div>
+                <span>Next.js</span>
               </div>
             </div>
           </div>
 
+          <!-- Cloud & Infra -->
           <div class="stack-panel" data-panel="cloud" role="tabpanel">
             <div class="tech-grid">
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- AWS -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 30 C8 30 6 27 6 24 C6 21 8 18.5 11 18.1 C11.6 14.6 14.6 12 18 12 C19.4 12 20.7 12.4 21.8 13.1 C23 10.7 25.5 9 28.5 9 C33.2 9 37 12.8 37 17.5 C37 17.8 37 18.1 36.9 18.4 C39.3 19.2 41 21.4 41 24 C41 27 38.8 29.5 36 30" stroke="#c4341d" stroke-width="1.5" fill="none"/><path d="M16 36 L20 32 M24 38 L24 32 M32 36 L28 32" stroke="#c4341d" stroke-width="1.5"/></svg>
-                </div>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/amazonwebservices/c4341d" alt="AWS" loading="lazy"></div>
                 <span>AWS</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- Lambda -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 38 L18 14 L24 28 M20 28 L30 14 L40 38" stroke="#c4341d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </div>
+                <div class="tech-icon tech-icon--text">&#955;</div>
                 <span>Lambda</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- EC2 -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="10" y="10" width="28" height="28" rx="2" stroke="#1c1916" stroke-width="1.5"/><path d="M10 20 H38 M10 28 H38 M20 10 V38 M28 10 V38" stroke="#1c1916" stroke-width="0.8" opacity="0.4"/><rect x="16" y="16" width="8" height="8" rx="1" fill="#c4341d" opacity="0.7"/></svg>
-                </div>
-                <span>EC2</span>
-              </div>
-              <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- S3 -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 8 L40 16 L24 24 L8 16 Z" stroke="#2f4f42" stroke-width="1.5" fill="none"/><path d="M8 16 V32 L24 40 L40 32 V16" stroke="#2f4f42" stroke-width="1.5" fill="none"/><path d="M24 24 V40" stroke="#2f4f42" stroke-width="1.2"/></svg>
-                </div>
+                <div class="tech-icon tech-icon--text">S3</div>
                 <span>S3</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- Terraform -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 14 L20 8 L20 22 L10 28 Z" fill="#c4341d" opacity="0.8"/><path d="M22 22 L32 16 L32 30 L22 36 Z" fill="#2f4f42" opacity="0.8"/><path d="M22 8 L32 2 L32 16 L22 22 Z" fill="#1c1916" opacity="0.6"/><path d="M10 28 L20 22 L20 36 L10 42 Z" fill="#c4341d" opacity="0.4"/></svg>
-                </div>
+                <div class="tech-icon tech-icon--text">EC2</div>
+                <span>EC2</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/terraform/1c1916" alt="Terraform" loading="lazy"></div>
                 <span>Terraform</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- Docker -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="18" width="8" height="7" rx="1" stroke="#1c1916" stroke-width="1.4"/><rect x="16" y="18" width="8" height="7" rx="1" stroke="#1c1916" stroke-width="1.4"/><rect x="26" y="18" width="8" height="7" rx="1" stroke="#1c1916" stroke-width="1.4"/><rect x="16" y="9" width="8" height="7" rx="1" stroke="#c4341d" stroke-width="1.4"/><path d="M6 28 C6 34 10 36 16 36 H33 C38 36 42 32 42 27 C40 27 38 26 38 24 C36 25 34 25 34 25" stroke="#1c1916" stroke-width="1.4" fill="none"/></svg>
-                </div>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/docker/1c1916" alt="Docker" loading="lazy"></div>
                 <span>Docker</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- Cognito / Auth -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="18" r="8" stroke="#c4341d" stroke-width="1.5"/><path d="M10 40 C10 32 16 28 24 28 C32 28 38 32 38 40" stroke="#c4341d" stroke-width="1.5"/><path d="M30 20 L34 24 L42 16" stroke="#2f4f42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </div>
-                <span>Cognito / Auth</span>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/githubactions/1c1916" alt="GitHub Actions" loading="lazy"></div>
+                <span>GitHub Actions</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- GitHub Actions / CI -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="16" stroke="#1c1916" stroke-width="1.5"/><path d="M20 18 C20 18 16 20 16 24 C16 28 20 30 24 30 C28 30 32 28 32 24 C32 20 28 18 24 18" stroke="#1c1916" stroke-width="1.2"/><path d="M24 14 V18 M24 30 V34" stroke="#c4341d" stroke-width="1.5"/></svg>
-                </div>
-                <span>GitHub Actions / CI</span>
+                <div class="tech-icon tech-icon--text">Auth</div>
+                <span>Cognito / Auth</span>
               </div>
             </div>
           </div>
 
+          <!-- Data & Search -->
           <div class="stack-panel" data-panel="data" role="tabpanel">
             <div class="tech-grid">
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- PostgreSQL full-text -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="24" cy="14" rx="14" ry="5" stroke="#2f4f42" stroke-width="1.5"/><path d="M10 14 V34 C10 36.8 16.3 39 24 39 C31.7 39 38 36.8 38 34 V14" stroke="#2f4f42" stroke-width="1.5"/><path d="M10 24 C10 26.8 16.3 29 24 29 C31.7 29 38 26.8 38 24" stroke="#2f4f42" stroke-width="1" opacity="0.5"/></svg>
-                </div>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/postgresql/1c1916" alt="PostgreSQL" loading="lazy"></div>
                 <span>PostgreSQL</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- Pinecone / vector -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 8 L38 38 H10 Z" stroke="#c4341d" stroke-width="1.5" fill="none"/><circle cx="24" cy="28" r="5" fill="#c4341d" opacity="0.7"/></svg>
-                </div>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/redis/c4341d" alt="Redis" loading="lazy"></div>
+                <span>Redis</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon tech-icon--text">Vec</div>
                 <span>Pinecone</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- SQS -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="14" width="36" height="10" rx="2" stroke="#c4341d" stroke-width="1.5"/><rect x="6" y="28" width="28" height="10" rx="2" stroke="#1c1916" stroke-width="1.2" opacity="0.5"/><path d="M34 28 L40 33 L34 38" stroke="#c4341d" stroke-width="1.5" fill="none"/></svg>
-                </div>
+                <div class="tech-icon tech-icon--text">SQS</div>
                 <span>SQS / queues</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- Embeddings -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4" fill="#c4341d"/><circle cx="36" cy="12" r="4" fill="#1c1916"/><circle cx="24" cy="36" r="4" fill="#2f4f42"/><path d="M16 12 H32 M14 16 L22 32 M34 16 L26 32" stroke="#6b645a" stroke-width="1.2"/></svg>
-                </div>
-                <span>Embeddings</span>
+                <div class="tech-icon tech-icon--text">S3</div>
+                <span>S3 data store</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- S3 data lake -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="20" width="32" height="20" rx="2" stroke="#1c1916" stroke-width="1.5"/><path d="M8 28 H40 M8 36 H40 M18 20 V40 M28 20 V40" stroke="#1c1916" stroke-width="0.8" opacity="0.4"/><path d="M18 8 L24 14 L30 8" stroke="#c4341d" stroke-width="1.5"/><path d="M24 14 V20" stroke="#c4341d" stroke-width="1.5"/></svg>
-                </div>
-                <span>Data pipelines</span>
-              </div>
-              <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- WER / Eval -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 30 C12 20 16 36 20 26 C24 16 28 36 32 22 C36 10 40 28 42 24" stroke="#c4341d" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M8 38 H40" stroke="#1c1916" stroke-width="1" opacity="0.4"/></svg>
-                </div>
-                <span>WER / Semantic eval</span>
+                <div class="tech-icon tech-icon--text">WER</div>
+                <span>Semantic eval</span>
               </div>
             </div>
           </div>
 
+          <!-- Real-time -->
           <div class="stack-panel" data-panel="realtime" role="tabpanel">
             <div class="tech-grid">
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- LiveKit -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="12" width="22" height="16" rx="2" stroke="#c4341d" stroke-width="1.5"/><path d="M30 18 L40 14 L40 30 L30 26 Z" stroke="#c4341d" stroke-width="1.5" fill="none"/><path d="M12 32 V38 M20 32 V36 M28 32 V40" stroke="#2f4f42" stroke-width="1.5"/></svg>
-                </div>
-                <span>LiveKit (self-hosted)</span>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/livekit/1c1916" alt="LiveKit" loading="lazy"></div>
+                <span>LiveKit</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- WebSocket -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 14 C12 14 6 20 6 24 C6 28 12 34 12 34" stroke="#1c1916" stroke-width="2" stroke-linecap="round"/><path d="M36 14 C36 14 42 20 42 24 C42 28 36 34 36 34" stroke="#1c1916" stroke-width="2" stroke-linecap="round"/><path d="M20 32 L28 16" stroke="#c4341d" stroke-width="2" stroke-linecap="round"/></svg>
-                </div>
+                <div class="tech-icon tech-icon--text">WS</div>
                 <span>WebSockets</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- S3 multipart -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 38 V16 M24 16 L16 24 M24 16 L32 24" stroke="#c4341d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="8" y="34" width="14" height="8" rx="1" stroke="#1c1916" stroke-width="1.4"/><rect x="26" y="34" width="14" height="8" rx="1" stroke="#1c1916" stroke-width="1.4" opacity="0.5"/><rect x="17" y="30" width="14" height="8" rx="1" stroke="#c4341d" stroke-width="1.4"/></svg>
-                </div>
-                <span>S3 multipart upload</span>
+                <div class="tech-icon tech-icon--text">SQS</div>
+                <span>SQS</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- SFU / Media -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="8" stroke="#2f4f42" stroke-width="1.5"/><circle cx="10" cy="12" r="4" stroke="#1c1916" stroke-width="1.2"/><circle cx="38" cy="12" r="4" stroke="#1c1916" stroke-width="1.2"/><circle cx="10" cy="36" r="4" stroke="#1c1916" stroke-width="1.2"/><circle cx="38" cy="36" r="4" stroke="#1c1916" stroke-width="1.2"/><path d="M14 14 L18 18 M34 14 L30 18 M14 34 L18 30 M34 34 L30 30" stroke="#c4341d" stroke-width="1.2"/></svg>
-                </div>
-                <span>SFU architecture</span>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/celery/1c1916" alt="Celery" loading="lazy"></div>
+                <span>Async queues</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- Celery async -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="24" r="6" stroke="#c4341d" stroke-width="1.5"/><circle cx="34" cy="24" r="6" stroke="#1c1916" stroke-width="1.5"/><path d="M20 22 H28 M20 26 H28" stroke="#6b645a" stroke-width="1.2"/><path d="M14 8 V18 M34 8 V18 M14 30 V40 M34 30 V40" stroke="#c4341d" stroke-width="1" opacity="0.5" stroke-dasharray="2 2"/></svg>
-                </div>
-                <span>Async task queues</span>
+                <div class="tech-icon tech-icon--text">S3</div>
+                <span>S3 multipart</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/ffmpeg/1c1916" alt="FFmpeg" loading="lazy"></div>
+                <span>FFmpeg</span>
               </div>
             </div>
           </div>
 
+          <!-- Dev tooling -->
           <div class="stack-panel" data-panel="dev" role="tabpanel">
             <div class="tech-grid">
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- Claude Code / AI harness -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="10" width="36" height="28" rx="3" stroke="#1c1916" stroke-width="1.5"/><path d="M14 20 L20 24 L14 28" stroke="#c4341d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 28 H34" stroke="#1c1916" stroke-width="1.8" stroke-linecap="round"/></svg>
-                </div>
-                <span>Claude Code / Codex</span>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/anthropic/1c1916" alt="Claude" loading="lazy"></div>
+                <span>Claude Code</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- devcontract / MCP harness -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 12 V36 M10 12 H22" stroke="#c4341d" stroke-width="2.5" stroke-linecap="round"/><path d="M38 12 V36 M38 36 H26" stroke="#1c1916" stroke-width="2.5" stroke-linecap="round"/><path d="M16 22 H32 M16 28 H28 M16 34 H30" stroke="#2f4f42" stroke-width="1.5"/></svg>
-                </div>
-                <span>devcontract (MCP)</span>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/openai/1c1916" alt="OpenAI" loading="lazy"></div>
+                <span>Codex / GPT</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- Git / GitHub -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="16" stroke="#1c1916" stroke-width="1.5"/><circle cx="24" cy="16" r="3" fill="#c4341d"/><circle cx="16" cy="30" r="3" fill="#1c1916"/><circle cx="32" cy="30" r="3" fill="#1c1916"/><path d="M24 19 V27 M21 30 H27" stroke="#6b645a" stroke-width="1.2"/></svg>
-                </div>
-                <span>Git / GitHub</span>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/cursor/1c1916" alt="Cursor" loading="lazy"></div>
+                <span>Cursor</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- OIDC / short-lived creds -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="14" y="22" width="20" height="18" rx="2" stroke="#1c1916" stroke-width="1.5"/><path d="M18 22 V16 C18 12.7 20.7 10 24 10 C27.3 10 30 12.7 30 16 V22" stroke="#1c1916" stroke-width="1.5"/><circle cx="24" cy="31" r="3" fill="#c4341d"/></svg>
-                </div>
-                <span>OIDC / secrets mgmt</span>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/github/1c1916" alt="GitHub" loading="lazy"></div>
+                <span>GitHub</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- Ruff / Black / mypy -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 14 H38 M10 22 H30 M10 30 H34 M10 38 H28" stroke="#2f4f42" stroke-width="2" stroke-linecap="round"/><circle cx="38" cy="30" r="5" stroke="#c4341d" stroke-width="1.5"/><path d="M35.5 30 H40.5 M38 27.5 V32.5" stroke="#c4341d" stroke-width="1.5"/></svg>
-                </div>
-                <span>Ruff / Black / mypy</span>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/ruff/1c1916" alt="Ruff" loading="lazy"></div>
+                <span>Ruff / Black</span>
               </div>
               <div class="tech-item">
-                <div class="tech-icon">
-                  <!-- CodeDeploy / rollback -->
-                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="14" stroke="#2f4f42" stroke-width="1.5"/><path d="M24 14 V24 L30 30" stroke="#c4341d" stroke-width="2" stroke-linecap="round"/><path d="M10 14 C10 14 6 10 10 6" stroke="#1c1916" stroke-width="1.5" stroke-linecap="round"/></svg>
-                </div>
-                <span>CI / CodeDeploy</span>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/pytest/1c1916" alt="pytest" loading="lazy"></div>
+                <span>pytest</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/githubactions/1c1916" alt="GitHub Actions" loading="lazy"></div>
+                <span>CI / CD</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/git/c4341d" alt="Git" loading="lazy"></div>
+                <span>Git</span>
               </div>
             </div>
           </div>
@@ -551,7 +454,6 @@
         </div><!-- /stack-panels -->
       </div>
     </section>
-
     <!-- ── HOW I WORK ── -->
     <section id="practice">
       <div class="wrap">
