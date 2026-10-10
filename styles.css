@@ -1,12 +1,12 @@
 ﻿:root {
-  --bg: #f4f0e6;
-  --bg-2: #fffdf8;
-  --ink: #1c1916;
-  --muted: #5e584e;
-  --line: rgba(28, 25, 22, 0.16);
-  --accent: #c4341d;
-  --accent-ink: #fffdf8;
-  --sage: #2f4f42;
+  --bg: #0d1117;
+  --bg-2: #161b22;
+  --ink: #e6edf3;
+  --muted: #8b949e;
+  --line: rgba(230, 237, 243, 0.1);
+  --accent: #2f81f7;
+  --accent-ink: #ffffff;
+  --sage: #3fb950;
   --serif: "Libre Baskerville", "Iowan Old Style", Palatino, serif;
   --sans: "Source Sans 3", "Avenir Next", "Segoe UI", sans-serif;
   --max: 1180px;
@@ -23,7 +23,7 @@ body {
   font-family: var(--sans);
   font-size: 1.08rem;
   line-height: 1.55;
-  scrollbar-color: #c8bfb2 transparent;
+  scrollbar-color: #30363d transparent;
 }
 img { max-width: 100%; display: block; }
 a { color: inherit; }
@@ -218,7 +218,7 @@ h1 em {
   padding: 0.7rem;
   background: var(--bg-2);
   border: 1px solid var(--ink);
-  box-shadow: 0 16px 40px rgba(28, 25, 22, 0.08);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(47,129,247,0.15);
 }
 .bezel::before, .bezel::after {
   content: "";
@@ -238,15 +238,15 @@ h1 em {
   height: auto;
   object-fit: cover;
   object-position: center 18%;
-  background: #d9d3c7;
+  background: #21262d;
 }
 .bezel figcaption, .sound-btn {
   position: absolute;
   z-index: 3;
   bottom: 1.15rem;
-  background: rgba(28, 25, 22, 0.82);
-  border: 1px solid rgba(244, 240, 230, 0.35);
-  color: #f4f0e6;
+  background: rgba(13, 17, 23, 0.88);
+  border: 1px solid rgba(230, 237, 243, 0.2);
+  color: #e6edf3;
   font-size: 0.78rem;
   letter-spacing: 0.04em;
 }
@@ -259,7 +259,7 @@ h1 em {
   cursor: pointer;
   border-radius: 0;
 }
-.sound-btn:hover, .sound-btn[aria-pressed="true"] { border-color: #e7b2a8; color: #fffdf8; }
+.sound-btn:hover, .sound-btn[aria-pressed="true"] { border-color: #2f81f7; color: #ffffff; }
 
 /* Hero entry animations */
 html.motion .hero-copy > * {
@@ -366,7 +366,7 @@ h2 {
   color: var(--ink);
   border: 1px solid var(--line);
 }
-.btn.ghost:hover { border-color: var(--accent); color: var(--accent); }
+.btn.ghost:hover { border-color: var(--accent); color: var(--accent); background: rgba(47,129,247,0.08); }
 
 /* ── Work list ── */
 .work { display: grid; gap: 0; }
@@ -444,7 +444,7 @@ h2 {
   font-size: 0.78rem;
 }
 .stage-num { color: var(--accent); font-family: var(--serif); letter-spacing: 0; font-size: 1rem; }
-.piece.is-on { background: rgba(196, 52, 29, 0.07); }
+.piece.is-on { background: rgba(47, 129, 247, 0.07); }
 
 /* ── Decisions ── */
 .decisions {
@@ -542,12 +542,12 @@ h2 {
   object-fit: contain;
   display: block;
   /* tint all icons to page ink so they match the palette */
-  filter: brightness(0) saturate(100%);
+  filter: brightness(0) invert(1) opacity(0.75);
   transition: filter 0.2s ease;
 }
 /* accent-colored icons (passed as c4341d in the URL) stay reddish */
 .tech-item:hover .tech-icon img {
-  filter: brightness(0) saturate(100%) invert(22%) sepia(80%) saturate(800%) hue-rotate(340deg) brightness(90%);
+  filter: brightness(0) invert(1) saturate(200%) sepia(50%) hue-rotate(195deg) brightness(130%);
 }
 /* text fallback icons (MCP, RAG, Eval, WER) */
 .tech-icon--text {

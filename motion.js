@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (!reduce) document.documentElement.classList.add("motion");
 
@@ -74,10 +74,10 @@
         var y = cy + Math.sin(ang * 0.8) * dot.r * 0.45;
         ctx.beginPath();
         ctx.arc(x, y, i % 5 === 0 ? 2.2 : 1.1, 0, Math.PI * 2);
-        ctx.fillStyle = i % 3 === 0 ? "rgba(47,79,66,0.45)" : "rgba(196,52,29,0.55)";
+        ctx.fillStyle = i % 3 === 0 ? "rgba(47,129,247,0.3)" : "rgba(47,129,247,0.55)";
         ctx.fill();
       });
-      ctx.strokeStyle = "rgba(196,52,29,0.28)";
+      ctx.strokeStyle = "rgba(47,129,247,0.2)";
       ctx.lineWidth = 1;
       ctx.beginPath();
       ctx.ellipse(cx, cy, 150, 70, t * 0.0002, 0, Math.PI * 1.4);
