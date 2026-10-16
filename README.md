@@ -22,7 +22,7 @@ The page uses a moving word and a drifting field, paper tags that swing on scrol
 
 ## What the page will say
 
-Public products, public repos, and architecture at the altitude in `profile/08-outreach-rules.md`. Live product links on the page are https://app.xyova.com/ and https://mishkatvle.com/. Private school operations, employer names, pool ids, host layout, and the studio marketing stats are left off on purpose. Do not cite the student or school counts shown on either marketing site.
+Public products, public repos, and architecture at the altitude in `profile/08-outreach-rules.md`. Live product links on the page are https://xyova.com/ and https://mishkatvle.com/. Private school operations, employer names, pool ids, host layout, and the studio marketing stats are left off on purpose. Do not cite the student or school counts shown on either marketing site.
 
 ## Cloudflare Pages
 
