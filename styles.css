@@ -149,3 +149,58 @@ header{height:79px;border-bottom:1px solid var(--line);position:sticky;top:0;bac
  .hero-copy .hero-actions{order:6;margin-top:25px}
  .hero-copy .hero-foot{order:7;margin-top:26px}
 }
+
+
+/* Experience and expertise: editorial evidence instead of another badge/card wall. */
+.experience-section{padding-top:105px;padding-bottom:105px;border-bottom:1px solid var(--line)}
+.career-list{border-top:1px solid var(--ink)}
+.career-row{display:grid;grid-template-columns:minmax(185px,.43fr) minmax(0,1fr) 42px;gap:clamp(22px,3.5vw,56px);padding:33px 0 43px;border-bottom:1px solid var(--line)}
+.career-meta{display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding-top:8px}
+.career-dates,.career-location{font:500 11px/1.65 var(--code);letter-spacing:.01em}
+.career-dates{color:var(--accent)}
+.career-location{color:var(--muted)}
+.career-detail h3{font:800 clamp(27px,3vw,40px)/1.1 var(--display);letter-spacing:-.065em;margin:0 0 8px}
+.career-title{font:600 14px/1.5 var(--display);color:var(--accent);margin:0 0 18px!important}
+.career-detail>p:not(.career-title){max-width:730px;margin:0 0 19px;color:#454e48;font-size:14px;line-height:1.76}
+.career-work{display:flex;flex-wrap:wrap;gap:12px 25px}
+.career-work a{font:600 12px var(--display);border-bottom:1px solid var(--ink);padding-bottom:4px}
+.career-work a:hover{border-color:var(--accent)}
+.career-index{color:#a3a9a0;font:500 11px var(--code);text-align:right;padding-top:9px}
+.experience-note{display:grid;grid-template-columns:minmax(185px,.43fr) 1fr 42px;gap:clamp(22px,3.5vw,56px);margin-top:28px}
+.experience-note .eyebrow{padding-top:4px}
+.experience-note p{max-width:790px;margin:0;color:var(--muted);font-size:14px;line-height:1.7}
+.more-note{font:12px/1.7 var(--code);color:var(--muted);margin:26px 0 0}
+.expertise-section{border-top:1px solid var(--line);padding-top:110px}
+.specialties{border-top:1px solid var(--ink);display:grid;grid-template-columns:1fr 1fr}
+.specialty{display:grid;grid-template-columns:54px 1fr;gap:18px;padding:32px 30px 40px 0;border-bottom:1px solid var(--line);min-width:0}
+.specialty:nth-child(even){padding-left:30px;border-left:1px solid var(--line)}
+.specialty-number{font:500 11px var(--code);color:var(--accent);padding-top:8px}
+.specialty h3{font:700 clamp(21px,2.2vw,31px)/1.2 var(--display);letter-spacing:-.055em;margin:0 0 12px}
+.specialty p{font-size:14px;line-height:1.74;color:#4c5650;margin:0 0 16px}
+.specialty-tech{font:500 11px/1.9 var(--code);color:var(--muted);overflow-wrap:anywhere}
+.expertise-note{max-width:850px;font-size:13px;line-height:1.8;color:var(--muted);margin:24px 0 0}
+@media(max-width:1090px){
+ .navigation{gap:21px}
+ .career-row{grid-template-columns:minmax(135px,.31fr) minmax(0,1fr) 30px}
+ .experience-note{grid-template-columns:minmax(135px,.31fr) minmax(0,1fr) 30px}
+}
+@media(max-width:780px){
+ .experience-section,.expertise-section{padding-block:74px}
+ .career-row{grid-template-columns:1fr 30px;gap:12px;padding:27px 0 33px}
+ .career-meta{grid-column:1;grid-row:1;flex-direction:row;gap:14px;flex-wrap:wrap;padding-top:0}
+ .career-detail{grid-column:1 / -1;grid-row:2}
+ .career-index{grid-column:2;grid-row:1;padding-top:0}
+ .experience-note{display:block;margin-top:24px}
+ .experience-note p{margin-top:8px}
+ .specialties{grid-template-columns:1fr}
+ .specialty,.specialty:nth-child(even){border-left:0;padding:29px 0;border-bottom:1px solid var(--line)}
+ .specialty{grid-template-columns:42px 1fr;gap:13px}
+ .specialty h3{font-size:25px}
+}
+@media(max-width:440px){
+ .career-detail h3{font-size:29px}
+ .career-detail>p:not(.career-title){font-size:13px}
+ .career-location,.career-dates{font-size:10px}
+ .career-work a{font-size:12px}
+ .specialty-tech{font-size:10px}
+}
