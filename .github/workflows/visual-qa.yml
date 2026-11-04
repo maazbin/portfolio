@@ -1,0 +1,66 @@
+name: Portfolio visual QA
+on:
+  push:
+    paths:
+      - .github/workflows/visual-qa.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  visual:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser
+        run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Run layout checks and save screenshots
+        run: |
+          python -m http.server 8765 >/tmp/site-server.log 2>&1 &
+          python - <<'PY'
+          import json, pathlib
+          from playwright.sync_api import sync_playwright
+          out=pathlib.Path('/tmp/visual-qa');out.mkdir(exist_ok=True)
+          with sync_playwright() as p:
+              browser=p.chromium.launch(headless=True)
+              for label,w,h in [('desktop',1440,900),('tablet',768,1024),('mobile',390,844)]:
+                  page=browser.new_page(viewport={'width':w,'height':h},device_scale_factor=1,reduced_motion='reduce')
+                  errors=[]
+                  page.on('pageerror',lambda error:errors.append(str(error)))
+                  page.goto('http://127.0.0.1:8765/',wait_until='domcontentloaded',timeout=30000)
+                  page.locator('.film-media').wait_for()
+                  page.screenshot(path=str(out/(label+'.png')),full_page=True,animations='disabled')
+                  info=page.evaluate("""() => {
+                    const sel=x=>document.querySelector(x);
+                    const b=x=>{const r=sel(x).getBoundingClientRect();return {top:Math.round(r.top),width:Math.round(r.width),height:Math.round(r.height)}};
+                    return {
+                      title:document.title,
+                      width:innerWidth,
+                      documentWidth:document.documentElement.scrollWidth,
+                      hero:b('.hero'),
+                      video:b('.hero-film'),
+                      firstProject:b('.case'),
+                      images:[...document.querySelectorAll('img[src^="images/"]')].map(e=>({src:e.getAttribute('src'),loaded:e.complete&&e.naturalWidth>0,fit:getComputedStyle(e).objectFit})),
+                      cssLoaded:getComputedStyle(document.body).fontFamily.includes('Archivo'),
+                      ogImage:sel('meta[property="og:image"]').content
+                    }
+                  }""")
+                  print(label,json.dumps(info),flush=True)
+                  assert info['documentWidth']<=w+2, f'horizontal overflow at {label}'
+                  assert info['video']['width']>150,'video not displayed'
+                  assert all(x['loaded'] for x in info['images']),f'local image failed to load at {label}'
+                  assert all(x['fit']=='contain' for x in info['images'] if ('preview.png' in x['src'] or 'maaz-hero' in x['src'])),'image fit mismatch'
+                  assert info['cssLoaded'],f'CSS not loaded at {label}'
+                  assert not errors,f'page errors at {label}: {errors}'
+                  page.close()
+              browser.close()
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: portfolio-desktop-tablet-mobile
+          path: /tmp/visual-qa/*.png
