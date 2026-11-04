@@ -204,3 +204,16 @@ header{height:79px;border-bottom:1px solid var(--line);position:sticky;top:0;bac
  .career-work a{font-size:12px}
  .specialty-tech{font-size:10px}
 }
+
+
+/* Native compact navigation for smaller displays, without hiding section access. */
+.mobile-navigation{display:none;position:relative}
+.mobile-navigation summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:14px;font:600 13px var(--display);padding:9px 0}
+.mobile-navigation summary::-webkit-details-marker{display:none}
+.mobile-navigation summary span{font:500 20px/1 var(--code);color:var(--accent)}
+.mobile-navigation[open] summary span{transform:rotate(45deg)}
+.mobile-links{position:absolute;right:0;top:calc(100% + 13px);width:min(275px,calc(100vw - 30px));display:grid;background:var(--page);border:1px solid var(--line);box-shadow:0 22px 40px #18221c1b;padding:10px;z-index:101}
+.mobile-links a{display:block;padding:12px 14px;border-bottom:1px solid var(--line);font:600 13px var(--display)}
+.mobile-links a:last-child{border-bottom:0;color:var(--accent)}
+.mobile-links a:focus-visible,.mobile-links a:hover{background:var(--surface)}
+@media(max-width:990px){.navigation{display:none}.mobile-navigation{display:block}}
