@@ -35,7 +35,7 @@ jobs:
                   page.locator('.film-media').wait_for()
                   # Make below-the-fold images load before asserting they exist.
                   page.evaluate("document.querySelectorAll('img[loading=lazy]').forEach(e => e.loading='eager')")
-                  page.wait_for_function("Array.from(document.querySelectorAll('img[src^=\\\"images/\\\"]')).every(e => e.complete && e.naturalWidth > 0)",timeout=20000)
+                  page.wait_for_function("Array.from(document.images).filter(e => e.getAttribute('src')?.startsWith('images/')).every(e => e.complete && e.naturalWidth > 0)",timeout=20000)
                   page.screenshot(path=str(out/(label+'.png')),full_page=True,animations='disabled')
                   info=page.evaluate("""() => {
                     const sel=x=>document.querySelector(x);
