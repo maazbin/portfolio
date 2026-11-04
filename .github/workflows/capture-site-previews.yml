@@ -45,22 +45,22 @@ jobs:
               browser.close()
           if not (output/'xyova-preview.png').exists() or not (output/'mishkat-vle-preview.png').exists():
               raise RuntimeError('Real product screenshot missing: fix capture, do not generate synthetic replacements')
-          # A dedicated, readable social card. Keep the original portrait aspect, no face crop.
-          bg=Image.new('RGB',(1200,630),'#e9ebe4')
+          # Editorial social image: same restrained design language as the site.
+          bg=Image.new('RGB',(1200,630),'#f5f4ef')
           d=ImageDraw.Draw(bg)
-          d.rectangle((0,0,18,630),fill='#22594b')
-          d.rectangle((58,490,738,493),fill='#22594b')
-          fontfile='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
-          boldfile='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
-          small=ImageFont.truetype(fontfile,25)
-          title=ImageFont.truetype(boldfile,58)
-          subtitle=ImageFont.truetype(fontfile,29)
-          d.text((60,70),'MAAZ BIN MUSTAQEEM',font=small,fill='#22594b')
-          d.text((60,175),'AI products.\nBackend systems.\nHard problems solved.',font=title,fill='#202e28',spacing=11)
-          d.text((60,525),'Engineering from architecture to production',font=subtitle,fill='#42534b')
+          d.rectangle((0,0,12,630),fill='#c34b32')
+          d.line((55,500,765,500),fill='#c9cbc4',width=2)
+          regular='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
+          bold='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
+          small=ImageFont.truetype(regular,22)
+          large=ImageFont.truetype(bold,73)
+          subtitle=ImageFont.truetype(regular,22)
+          d.text((58,64),'MAAZ BIN MUSTAQEEM / SOFTWARE ENGINEER',font=small,fill='#c34b32')
+          d.text((56,170),'Bring me the\nhard part.',font=large,fill='#1c201e',spacing=8)
+          d.text((57,530),'AI agents · backend systems · architecture',font=subtitle,fill='#59635b')
           portrait=Image.open(output/'maaz-hero.jpg').convert('RGB')
-          fitting=ImageOps.contain(portrait,(386,560),Image.Resampling.LANCZOS)
-          x=800+(386-fitting.width)//2;y=35+(560-fitting.height)//2
+          fitting=ImageOps.contain(portrait,(365,550),Image.Resampling.LANCZOS)
+          x=810+(365-fitting.width)//2; y=40+(550-fitting.height)//2
           bg.paste(fitting,(x,y))
           bg.save(output/'social-preview.jpg',quality=88,optimize=True)
           PY
