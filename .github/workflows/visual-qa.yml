@@ -33,6 +33,9 @@ jobs:
                   page.on('pageerror',lambda error:errors.append(str(error)))
                   page.goto('http://127.0.0.1:8765/',wait_until='domcontentloaded',timeout=30000)
                   page.locator('.film-media').wait_for()
+                  # Make below-the-fold images load before asserting they exist.
+                  page.evaluate("document.querySelectorAll('img[loading=lazy]').forEach(e => e.loading='eager')")
+                  page.wait_for_function("Array.from(document.querySelectorAll('img[src^=\\\"images/\\\"]')).every(e => e.complete && e.naturalWidth > 0)",timeout=20000)
                   page.screenshot(path=str(out/(label+'.png')),full_page=True,animations='disabled')
                   info=page.evaluate("""() => {
                     const sel=x=>document.querySelector(x);
