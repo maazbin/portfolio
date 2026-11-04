@@ -3,6 +3,9 @@ on:
   push:
     paths:
       - .github/workflows/visual-qa.yml
+      - index.html
+      - styles.css
+      - motion.js
   workflow_dispatch:
 permissions:
   contents: read
@@ -55,6 +58,7 @@ jobs:
                   print(label,json.dumps(info),flush=True)
                   assert info['documentWidth']<=w+2, f'horizontal overflow at {label}'
                   assert info['video']['width']>150,'video not displayed'
+                  assert info['video']['top']<h*.70, f'video below initial focus at {label}'
                   assert all(x['loaded'] for x in info['images']),f'local image failed to load at {label}'
                   assert all(x['fit']=='contain' for x in info['images'] if ('preview.png' in x['src'] or 'maaz-hero' in x['src'])),'image fit mismatch'
                   assert info['cssLoaded'],f'CSS not loaded at {label}'
