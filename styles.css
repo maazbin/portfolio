@@ -136,3 +136,16 @@ header{height:79px;border-bottom:1px solid var(--line);position:sticky;top:0;bac
 @media(max-width:780px){.navigation a:not(.nav-contact){display:none}.header-inner{gap:15px}.hero{padding:38px 0 58px}.hero-grid,.section-heading,.case-grid,.quote-inner,.method-grid,.cta-grid{grid-template-columns:1fr}.hero-meta{margin-bottom:30px}.hero-copy h1{font-size:clamp(60px,10vw,90px)}.hero-film{padding-top:35px}.cred-grid{grid-template-columns:1fr}.cred-item{border-right:0;border-bottom:1px solid var(--line);padding:18px 0}.cred-item:last-child{border-bottom:0}.section-heading{gap:16px;margin-bottom:35px}.section{padding:74px 0}.section-heading h2{font-size:clamp(43px,7vw,68px)}.case{padding:32px 0 65px}.case-copy h3{font-size:45px}.quote-band{padding:60px 0}.quote-inner{gap:30px}.capabilities{grid-template-columns:1fr}.capability{padding:26px 0;border-right:0;border-bottom:1px solid var(--line)}.capability:last-child{border-bottom:0}.capability .index{margin-bottom:20px}.more-grid{grid-template-columns:1fr}.more-project:nth-child(even){padding-left:0;border-left:0}.method-grid{gap:30px}.method-heading h2{font-size:57px}.cta-grid{gap:20px}.bottom-cta{padding:75px 0}}
 @media(max-width:440px){.identity{font-size:17px}.identity small{font-size:8px}.nav-contact{font-size:11px}.hero-copy h1{font-size:54px}.hero-copy .lead{font-size:16px}.hero-foot{font-size:10px;gap:11px}.hero-foot span+span{padding-left:11px}.section-heading h2{font-size:43px}.case-copy h3{font-size:38px}.case-header .case-type{font-size:9px}.case-facts div{grid-template-columns:75px 1fr}.more-project{grid-template-columns:44px 1fr;gap:14px}.bottom-cta h2{font-size:54px}.about{grid-template-columns:1fr}.about-image{max-width:140px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.btn,.play-video .play-icon{transition:none}}
+
+/* Mobile editorial order: headline, immediately followed by introduction film. */
+@media(max-width:780px){
+ .hero-grid{display:flex;flex-direction:column;align-items:stretch;gap:0}
+ .hero-copy{display:contents}
+ .hero-copy .eyebrow{order:1}
+ .hero-copy h1{order:2;margin:12px 0 19px}
+ .hero-film{order:3;width:100%;padding-top:0;margin:8px 0 27px}
+ .hero-copy .lead{order:4;max-width:none}
+ .hero-copy .note{order:5;max-width:none}
+ .hero-copy .hero-actions{order:6;margin-top:25px}
+ .hero-copy .hero-foot{order:7;margin-top:26px}
+}
