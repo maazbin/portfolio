@@ -1,0 +1,74 @@
+name: Capture real product previews
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/capture-site-previews.yml
+permissions:
+  contents: write
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install screenshot tools
+        run: |
+          pip install playwright pillow
+          python -m playwright install --with-deps chromium
+      - name: Capture product sites and create social image
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from playwright.sync_api import sync_playwright
+          from PIL import Image, ImageOps, ImageDraw, ImageFont
+          output=Path('images'); output.mkdir(exist_ok=True)
+          websites=[
+            ('xyova', 'https://xyova.com/'),
+            ('mishkat-vle','https://mishkatvle.com/')
+          ]
+          with sync_playwright() as p:
+              browser=p.chromium.launch(headless=True,args=['--disable-dev-shm-usage'])
+              for name,url in websites:
+                  page=browser.new_page(viewport={'width':1600,'height':900}, device_scale_factor=1, reduced_motion='reduce')
+                  try:
+                      page.goto(url,wait_until='domcontentloaded',timeout=45000)
+                      page.wait_for_timeout(1800)
+                      page.screenshot(path=str(output/(name+'-preview.png')),full_page=False,animations='disabled')
+                      print(name,'captured',page.title())
+                  except Exception as error:
+                      print(name,'capture failed:',str(error))
+                  finally:
+                      page.close()
+              browser.close()
+          if not (output/'xyova-preview.png').exists() or not (output/'mishkat-vle-preview.png').exists():
+              raise RuntimeError('Real product screenshot missing: fix capture, do not generate synthetic replacements')
+          # A dedicated, readable social card. Keep the original portrait aspect, no face crop.
+          bg=Image.new('RGB',(1200,630),'#e9ebe4')
+          d=ImageDraw.Draw(bg)
+          d.rectangle((0,0,18,630),fill='#22594b')
+          d.rectangle((58,490,738,493),fill='#22594b')
+          fontfile='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
+          boldfile='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
+          small=ImageFont.truetype(fontfile,25)
+          title=ImageFont.truetype(boldfile,58)
+          subtitle=ImageFont.truetype(fontfile,29)
+          d.text((60,70),'MAAZ BIN MUSTAQEEM',font=small,fill='#22594b')
+          d.text((60,175),'AI products.\nBackend systems.\nHard problems solved.',font=title,fill='#202e28',spacing=11)
+          d.text((60,525),'Engineering from architecture to production',font=subtitle,fill='#42534b')
+          portrait=Image.open(output/'maaz-hero.jpg').convert('RGB')
+          fitting=ImageOps.contain(portrait,(386,560),Image.Resampling.LANCZOS)
+          x=800+(386-fitting.width)//2;y=35+(560-fitting.height)//2
+          bg.paste(fitting,(x,y))
+          bg.save(output/'social-preview.jpg',quality=88,optimize=True)
+          PY
+      - name: Commit images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images/xyova-preview.png images/mishkat-vle-preview.png images/social-preview.jpg
+          git diff --cached --quiet && exit 0
+          git commit -m "Capture actual product site screenshots and social card"
+          git push
