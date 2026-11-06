@@ -11,7 +11,7 @@ else{const observer=new IntersectionObserver(entries=>{for(const entry of entrie
 const play=document.querySelector('[data-play]');
 if(play){play.addEventListener('click',()=>{
  const iframe=document.createElement('iframe');
- iframe.src='https://www.youtube-nocookie.com/embed/qx9zmU8CkhI?autoplay=1&rel=0';
+ iframe.src='https://www.youtube-nocookie.com/embed/WBjUWPSJlfQ?autoplay=1&rel=0';
  iframe.title='Maaz Bin Mustaqeem video introduction';
  iframe.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
  iframe.referrerPolicy='strict-origin-when-cross-origin';
