@@ -9,7 +9,7 @@ I build AI systems and Python backends, and take ownership of the architecture a
 - **[Xyova](https://xyova.com/):** Evidence-backed lesson evaluation from recorded teaching, using quoted and timestamped findings with statistical review.
 - **[Mishkat VLE](https://mishkatvle.com/):** A multi-tenant education platform with role-aware portals, AI learning features, live teaching, and gamification.
 - **[JobPilot](https://github.com/maazbin/jobpilot):** Open-source MCP execution and memory infrastructure for browser workflows. [View the demo](https://github.com/maazbin/jobpilot/blob/main/docs/demo.gif).
-- **[Cerebra](https://cerebra.jambits.io/):** Multimodal document intelligence with agent workflows and human review.
+- **[Cerebra](https://jambits.io/cerebra/):** Multimodal document intelligence with agent workflows and human review.
 - **Client work:** An AI legal MVP delivered through Upwork, with a publicly visible client review.
 
 This site is intentionally about the problems, decisions, and outcomes, not an exhaustive résumé.
