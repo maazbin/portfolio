@@ -4,13 +4,18 @@ The source for [maazbin.github.io/portfolio](https://maazbin.github.io/portfolio
 
 I build AI systems and Python backends, and take ownership of the architecture around them: state, tool execution, security boundaries, asynchronous workflows, evaluation, and deployment.
 
+## Recently built
+
+- **[Kancha PM](https://github.com/maazbin/kancha-pm):** Private project-management desk for coding agents, with Jira/GitHub handoffs, source evidence, and delivery analytics.
+- **[JobPilot](https://github.com/maazbin/jobpilot):** MCP browser execution, logged-in workflows, durable job history, and failure evidence.
+- **[Creator Runbook](https://github.com/maazbin/creator-runbook):** Agent skill and production workflow for filmmaking from briefs to platform-ready masters.
+- **[Filmcraft](https://github.com/maazbin/filmcraft-skill):** Model-independent scripting and directing skill with Python/FFmpeg production examples.
+
 ## What this site shows
 
 - **[Xyova](https://xyova.com/):** Evidence-backed lesson evaluation from recorded teaching, using quoted and timestamped findings with statistical review.
 - **[Mishkat VLE](https://mishkatvle.com/):** A multi-tenant education platform with role-aware portals, AI learning features, live teaching, and gamification.
-- **[Kancha PM](https://github.com/maazbin/kancha-pm):** Private, local-first engineering desk with coding-agent integration, Jira and GitHub work tracking, evidence-backed next actions, team handoffs, and delivery analytics.
-- **[JobPilot](https://github.com/maazbin/jobpilot):** Open-source MCP execution and memory infrastructure for browser workflows. [View the demo](https://github.com/maazbin/jobpilot/blob/main/docs/demo.gif).
-- **[Cerebra](https://jambits.io/cerebra/):** Multimodal document intelligence with agent workflows and human review.
+- **[Cerebra](https://jambits.io/cerebra/):** Past multimodal document intelligence project with agent workflows and human review; the original app is retired and the page is an archived demo.
 - **Client work:** An AI legal MVP delivered through Upwork, with a publicly visible client review.
 
 This site is intentionally about the problems, decisions, and outcomes, not an exhaustive résumé.
