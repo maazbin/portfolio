@@ -217,3 +217,22 @@ header{height:79px;border-bottom:1px solid var(--line);position:sticky;top:0;bac
 .mobile-links a:last-child{border-bottom:0;color:var(--accent)}
 .mobile-links a:focus-visible,.mobile-links a:hover{background:var(--surface)}
 @media(max-width:990px){.navigation{display:none}.mobile-navigation{display:block}}
+
+/* Recent engineering work, Nov 2026 */
+.latest-section{background:#eeeee8;border-bottom:1px solid var(--line)}
+.latest-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.latest-card{border:1px solid var(--line);background:var(--page);padding:clamp(20px,2.6vw,35px);display:flex;flex-direction:column;min-width:0;min-height:420px;transition:border-color .2s,transform .2s}
+.latest-card:hover{border-color:var(--ink);transform:translateY(-3px)}
+.latest-kicker{display:flex;justify-content:space-between;gap:14px;color:var(--accent);font:500 10px/1.5 var(--code);letter-spacing:.045em;min-height:34px}
+.latest-kicker span:last-child{color:var(--muted);white-space:nowrap}
+.latest-media{width:100%;height:195px;overflow:hidden;background:#d7dcd5;margin:7px 0 23px;border:1px solid #cbd0ca;display:grid;place-items:center}
+.latest-media img{display:block;width:100%;height:100%;object-fit:contain}
+.latest-initial{height:195px;margin:7px 0 23px;background:#1c201e;color:#f5f4ef;display:flex;justify-content:center;align-items:center;font:800 clamp(67px,8vw,116px)/1 var(--display);letter-spacing:-.105em}
+.latest-initial span{color:#e16a50}
+.latest-card h3{font:800 clamp(29px,3.3vw,43px)/1.08 var(--display);letter-spacing:-.065em;margin:0 0 14px}
+.latest-card p{font-size:14px;color:var(--muted);line-height:1.7;margin:0 0 22px}
+.latest-card a{align-self:flex-start;font:700 12px var(--display);border-bottom:1px solid var(--ink);padding-bottom:5px;margin-top:auto}
+.latest-card a:hover{border-color:var(--accent)}
+.latest-footnote{color:var(--muted);font:11px/1.6 var(--code);margin:23px 0 0}
+@media(max-width:780px){.latest-grid{grid-template-columns:1fr}.latest-card{min-height:unset}.latest-media,.latest-initial{height:205px}}
+@media(prefers-reduced-motion:reduce){.latest-card:hover{transform:none}}
